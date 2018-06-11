@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- smcs-common -->
+		<script type="text/javascript" src="cloud/smcs/common/util/const.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/DebugAssertUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/Expression.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormAccessConfig.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormAccessUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormFieldAttrConfig.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormFieldAttrUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormPrintDataUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormFieldUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/FormNewIDUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/TokenUtil.js"></script>
+		<script type="text/javascript" src="cloud/smcs/common/util/SingleSignProxy.js"></script>
+
+		<!-- smcs-component -->
+		<script type="text/javascript" src="cloud/smcs/component/BZFormTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ContractClass1ComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ContractClass2ComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ContractField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ContractTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/CtAttachTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/CustomerField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/CustomerFieldByContract.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/DeptField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/EconItemField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/EconItemTypeField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/EconItemTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/IndexDeptField.js"></script>		
+		<script type="text/javascript" src="cloud/smcs/component/IndexField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/InvoiceTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/IsUrgentComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/PayObjectTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/PayTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ReceiptField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/ReportTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/SettleTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/SignIdentityComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/SupplierField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/SupplierFieldByContract.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/TaxPayerQualityComboBox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/TaxRateCombobox.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/UserField.js"></script>
+		<script type="text/javascript" src="cloud/smcs/component/WriteOffTypeComboBox.js"></script>
+
+		<!-- smcs-panel -->
+
+		<!-- smcs-form-common -->
+		<script type="text/javascript" src="cloud/smcs/form/common/form_check_util.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_globalvariant.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_info_util.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_money_util.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_operation_util.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/callbackservice.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/checkhistory_panel.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/common_header_panel.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_common.js"></script>
+		<script type="text/javascript" src="cloud/smcs/form/common/form_status_util.js"></script>
+

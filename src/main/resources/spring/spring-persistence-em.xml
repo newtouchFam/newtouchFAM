@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- 使用JPA标准的EntityManager作为持久化容器，指定数据源与持久化配置 -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<!-- 静态数据源配置 -->
+<!--
+		<property name="dataSource" ref="dataSource" />
+-->
+
+		<!-- 动态多数据源切换配置 -->
+		<property name="dataSource" ref="dynamicDataSource" />
+
+		<!-- 指定持久化实现类 --> 
+		<property name="persistenceProvider" ref="hibernatePersistenceProvider" />
+
+		<!-- 持久化属性 --> 
+ 		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.jdbc.batch_size">50</prop>
+			</props>
+		</property>
+
+		<!-- 实体扫描路径，jar内实体也有效 -->
+ 		<property name="packagesToScan" value="com.newtouch.*" />
+		<!-- 实体hbm配置文件 -->
+		<property name="mappingResources">
+			<list>
+				<value>hbm/security.hbm.xml</value>
+			</list>
+		</property>
+
+<!--持久化实现配置已委托给spring
+		<property name="persistenceXmlLocation" value="classpath:/persistence/persistence-em.xml" />
+		<property name="persistenceUnitName" value="newtouch" />
+-->
+	</bean>
+
+    <!-- 指定持久化实现类 -->  
+    <bean id="hibernatePersistenceProvider" class="org.hibernate.jpa.HibernatePersistenceProvider" />  
+
+	<!-- 注入数据访问层 -->
+	<bean id="entityManagerDAOAdapter" class="com.newtouch.cloud.common.daoadapter.impl.hibernate5.EntityManagerDAOApapter" />
+
+	<!-- 事务控制 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- 支持@Transactional标签 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+</beans>

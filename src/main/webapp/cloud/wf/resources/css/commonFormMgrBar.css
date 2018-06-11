@@ -1,0 +1,305 @@
+.xy-wf-title
+{
+	background-image: url(../images/wf-itemmgr-title-bg.gif) !important;
+	background-position: top;
+	background-repeat: repeat;
+	width:100%;
+	border-collapse: collapse; 
+	table-layout:fixed;
+	align:left;
+	color:#093D64;
+}
+.xy-wf-title table
+{
+	height:100%;
+	width:100%;
+	offsetTop:0;
+	border-collapse:collapse;
+	textAlign:center!important;
+}
+.xy-wf-title span
+{
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	height:30px;
+}
+.xy-wf-title-m8logo
+{
+	background-image: url(../images/m8logo.gif) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:100%;
+	width:69px;
+}
+.xy-wf-title-freeskylogo
+{
+	background-image: url(../images/freeskylogo.gif) !important;
+	background-position: top;
+	background-repeat: no-repeat;
+	height:100%;
+	width:184px;
+}
+
+.xy-hr
+{
+	background-image: url(../images/wf-itemmgr-bar-hr.gif) !important;
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	height:4px;
+	font-size: 1px;
+	width:100%;
+}
+.xy-toolbar-wf-itemmgr
+{
+	background-image: url(../images/wf-itemmgr-bar-bg.gif);
+	background-position: top;
+	background-repeat: repeat;
+	height:52px !important;
+	width:100%;
+	border-collapse: collapse; 
+	table-layout: fixed;
+	align: left;
+}
+.xy-toolbar-wf-itemmgr table
+{
+	height:100%;
+	width:100%;
+	offsetTop:0px;
+	border-collapse:collapse;
+}
+.xy-toolbar-wf-itemmgr td
+{
+	width:48px;
+	noWrap:true;
+	color:#808080;
+	font-size:12px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+	padding:2px 2px 2px 2px;
+	text-align:center;
+}
+.xy-wf-tb-top-pnl-spr
+{
+	background-image: url(../images/wf-tb-top-pnl-spr.gif) ;
+	background-position: top;
+	background-repeat: repeat-x;
+	width:100%;
+	height:8px;
+	font-size: 1px;
+}
+.xy-wf-title-txt
+{
+	color:#15428b !important;
+	font-size:16px !important;
+	font-weight:bold !important;
+}
+
+.xy-tb-wf-spr
+{
+	height:45px;//100%;
+	width:2px;
+	background-image: url(../images/bar_left.gif) !important;
+	background-position: top !important;
+	background-repeat: repeat-y !important;
+}
+.xy-tb-wf-spacer
+{
+	height:100%;
+	width:5px;
+}
+.xy-tb-wf-btn
+{
+	height:100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	textAlign:center!important;
+	verticalAlign:text-bottom!important;
+	cursor:pointer;
+	padding:1px 1px 1px 1px;
+}
+.xy-tb-wf-btn-over
+{
+	border:1px solid #08206B;
+	background-color: #B5BED6;
+	color:#000000;
+	padding:0px 0px 0px 0px;
+}
+.xy-tb-wf-btn-disabled
+{
+    color: gray;
+    cursor: default;
+    opacity: .3;
+    -moz-opacity: .3;
+    filter: alpha(opacity=30);
+}
+.xy-tb-wf-btn div
+{
+	height:33px;
+	width:48px;
+}
+.xy-tb-wf-btn span
+{
+	padding:1px 1px 1px 1px;
+	white-space: nowrap;
+} 
+
+.xy-wf-tb-bottom-pnl-spr
+{
+	background-image: url(../images/wf-tb-bottom-pnl-spr.gif);
+	background-position: top;
+	background-repeat: repeat;
+	height:8px;
+}
+.xy-wf-tb-bottom-pnl-spr
+{
+	background-image: url(../images/wf-tb-bottom-pnl-spr.gif) ;
+	background-position: top;
+	background-repeat: repeat-x;
+	width:100%;
+	height:8px;
+	font-size: 1px;
+}
+.xy-wf-itemmgr-checkdesc
+{
+	width:100%;
+	border-collapse: collapse; 
+	table-layout: fixed;
+	align: left;
+}
+.xy-wf-itemmgr-checkdesc table
+{
+	width:100%;
+	offsetTop:0px;
+	border-collapse:collapse;
+}
+.xy-wf-itemmgr-checkdesc span
+{
+	white-space: nowrap !important;
+	font-size: 16px !important;
+	font-weight: bold;
+	color:#15428B;
+}
+.xy-wf-itemmgr-checkdesc-txt
+{
+	width:99% !important;
+	height:70px;
+}
+#btnSaveTemplate
+{
+	background-image: url(../images/wf-itemmgr-btn-save.gif) !important;
+}
+#btnSave
+{
+	background-image: url(../images/wf-itemmgr-btn-save.gif) !important;
+}
+#btnSubmit
+{
+	background-image: url(../images/wf-itemmgr-btn-submit.gif) !important;
+}
+#btnMinusForm
+{
+	background-image: url(../images/wf-itemmgr-btn-remind.gif) !important;
+}
+#btnSubmitPrn
+{
+	background-image: url(../images/wf-itemmgr-btn-submitprn.gif) !important;
+}
+#btnSubmitVoucher
+{
+	background-image: url(../images/wf-itemmgr-btn-voucher.gif) !important;
+}
+#btnRollback
+{
+	background-image: url(../images/wf-itemmgr-btn-rollback.gif) !important;
+}
+#btnReject
+{
+	background-image: url(../images/wf-itemmgr-btn-reject.gif) !important;
+}
+#btnTranswith
+{
+	background-image: url(../images/wf-itemmgr-btn-transwith.gif) !important;
+}
+#btnTransmit
+{
+	background-image: url(../images/wf-itemmgr-btn-transmit.gif) !important;
+}
+#btnExport
+{
+	background-image: url(../images/wf-itemmgr-btn-export.gif) !important;
+}
+#btnPrint
+{
+	background-image: url(../images/wf-itemmgr-btn-print.gif) !important;
+}
+#btnPrintFace
+{
+	background-image: url(../images/wf-itemmgr-btn-printface.gif) !important;
+}
+#btnProcinstimg
+{
+	background-image: url(../images/wf-itemmgr-btn-procinstimg.gif) !important;
+}
+#btnClose
+{
+	background-image: url(../images/wf-itemmgr-close.gif) !important;
+}
+#btnAttach
+{
+	background-image: url(../images/wf-itemmgr-btn-attach.gif) !important;
+}
+#btnMail
+{
+	background-image: url(../images/wf-itemmgr-btn-remind.gif) !important;
+}
+#btnInvoiceimg
+{
+	background-image: url(../images/xy-wf-viewinvoice.gif) !important;
+}
+#btnTemplate
+{
+	background-image: url(../images/wf-itemmgr-bar-fav.gif) !important;
+}
+#btnShow
+{
+	background-image: url(../images/wf-itemmgr-btn-showapply.gif) !important;
+}
+#btnShowInterFace
+{
+	background-image: url(../images/wf-itemmgr-btn-showapply.gif) !important;
+}
+#btnPayStatus
+{
+	background-image: url(../images/wf-itemmgr-btn-showapply.gif) !important;
+}
+#btnShowCpmisForm
+{
+	background-image: url(../images/wf-itemmgr-btn-showapply.gif) !important;
+}
+#btnSos
+{
+	background-image: url(../images/wf-itemmgr-btn-urgency.gif) !important;
+}
+input 
+{
+	behavior: url(resources/css/input2ie.htc);
+}
+button,input[type=button],input[type=reset],input[type=submit]
+{
+	BORDER-RIGHT: #003C74 1px solid; 
+	PADDING-RIGHT: 2px; 
+	height:18px;
+	BORDER-TOP: #003C74 1px solid; 
+	PADDING-LEFT: 2px; 
+	FONT-SIZE: 12px; 
+	background:#FFFFFF url(../images/btn-bg.gif) repeat-x scroll top left;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	BORDER-LEFT: #003C74 1px solid; 
+	CURSOR: pointer; 
+	COLOR: black; 
+	PADDING-TOP: 2px; 
+	BORDER-BOTTOM: #003C74 1px solid 
+}

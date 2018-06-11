@@ -1,0 +1,47 @@
+.x-voucher-leftSum-info {
+	text-align: left;
+	padding: 1px 8px 1px 8px;
+	font-size: 12px;
+}
+
+.x-voucher-rightSum-info {
+	text-align: right;
+	padding: 1px 8px 1px 8px;
+	font-size: 12px;
+}
+
+.xy-voucher-itemmgr-checkdesc
+{
+	height:34px;
+	width:100%;
+	border-collapse: collapse; 
+	table-layout: fixed;
+	align: left;
+}
+
+.xy-voucher-itemmgr-checkdesc table
+{
+	width:100%;
+	offsetTop:0px;
+	border-collapse:collapse;
+}
+
+.xy-voucher-itemmgr-checkdesc span
+{
+	white-space: nowrap !important;
+	font-size: 12px !important;
+}
+
+.xy-voucher-itemmgr-checkdesc-txt
+{
+	width:99% !important;
+	height:30px !important;
+}
+
+.xy-wf-title-txt
+{
+	color:#15428b !important;
+	font-size:16px !important;
+	font-weight:bold !important;
+	text-align:center !important;
+}

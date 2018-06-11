@@ -1,0 +1,4 @@
+<SQL>
+select n.uqnumberingid as column0,n.varname as column1 
+  from tgl_voucher_numberings n
+</SQL>

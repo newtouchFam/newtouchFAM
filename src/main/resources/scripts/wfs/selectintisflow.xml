@@ -1,0 +1,7 @@
+<SQL>
+	SELECT tc.categorycode AS column0, 
+			tc.categoryname AS column1 
+	FROM tob_category tc 
+	WHERE tc.categorytype = '10000010' 
+	ORDER BY tc.categorycode+0 
+</SQL>

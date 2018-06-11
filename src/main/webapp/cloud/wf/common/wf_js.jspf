@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<script type="text/javascript" src="cloud/wf/common/util/formManagerUtil.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/formPrintFun.js"></script>
+
+		<!-- 提交回退公用接口 -->
+		<script type="text/javascript" src="cloud/wf/common/service/ActivityDraftService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/ActivityRefuseService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/ActivityRollbackService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/ActivitySubmitService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/ApproveUserService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/WorkItemDeleteService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/WorkItemTransformService.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/service/WorkItemTransmitService.js"></script>

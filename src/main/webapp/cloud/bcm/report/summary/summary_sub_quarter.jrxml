@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="综合费用查询（季度）" language="groovy" pageWidth="2400" pageHeight="555" orientation="Landscape" columnWidth="2400" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e75342ff-9ab4-4e47-bed8-2b6523b82ce9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="budgetyear" class="java.lang.Integer"/>
+	<parameter name="exvtreport_url" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="CASECODE" class="java.lang.String"/>
+	<field name="RESPNID" class="java.lang.String"/>
+	<field name="RESPNCODE" class="java.lang.String"/>
+	<field name="RESPNNAME" class="java.lang.String"/>
+	<field name="INDEXID" class="java.lang.String"/>
+	<field name="INDEXCODE" class="java.lang.String"/>
+	<field name="INDEXNAME" class="java.lang.String"/>
+	<field name="DATA01_BUDGET" class="java.lang.Double"/>
+	<field name="DATA01_TRANSIT" class="java.lang.Double"/>
+	<field name="DATA01_PLAN" class="java.lang.Double"/>
+	<field name="DATA01_ACTUAL" class="java.lang.Double"/>
+	<field name="DATA01_REMAIN" class="java.lang.Double"/>
+	<field name="DATA02_BUDGET" class="java.lang.Double"/>
+	<field name="DATA02_TRANSIT" class="java.lang.Double"/>
+	<field name="DATA02_PLAN" class="java.lang.Double"/>
+	<field name="DATA02_ACTUAL" class="java.lang.Double"/>
+	<field name="DATA02_REMAIN" class="java.lang.Double"/>
+	<field name="DATA03_BUDGET" class="java.lang.Double"/>
+	<field name="DATA03_TRANSIT" class="java.lang.Double"/>
+	<field name="DATA03_PLAN" class="java.lang.Double"/>
+	<field name="DATA03_ACTUAL" class="java.lang.Double"/>
+	<field name="DATA03_REMAIN" class="java.lang.Double"/>
+	<field name="DATA04_BUDGET" class="java.lang.Double"/>
+	<field name="DATA04_TRANSIT" class="java.lang.Double"/>
+	<field name="DATA04_PLAN" class="java.lang.Double"/>
+	<field name="DATA04_ACTUAL" class="java.lang.Double"/>
+	<field name="DATA04_REMAIN" class="java.lang.Double"/>
+	<columnHeader>
+		<band height="48">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="580" y="24" width="90" height="24" uuid="12db3f1d-5014-4f2d-85a4-379010500567"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="670" y="24" width="90" height="24" uuid="9c1be021-aa41-474e-9b3c-7ae1f557b722"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[在途数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="130" y="0" width="120" height="48" uuid="f05fddf2-11fd-4cdf-b0cc-74a0a6d119d9"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[责任中心名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="40" y="0" width="90" height="48" uuid="1fb7b65b-3a32-4268-a5cc-d81cb18c53ff"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[责任中心编码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="340" y="0" width="240" height="48" uuid="1e3a7d97-0f6d-4bda-a1a7-e8046cf0b9c6"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算项目名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="850" y="24" width="90" height="24" uuid="deb3d84d-2dc0-4063-8525-6d649e0a53fb"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实际数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="940" y="24" width="90" height="24" uuid="85f3ea14-d26c-4a74-8fe3-eede94ebc771"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[剩余数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="760" y="24" width="90" height="24" uuid="15b712e0-67d9-4055-b15b-3b609dbc013e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预占数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="250" y="0" width="90" height="48" uuid="b0794605-0334-4137-a6af-448ac2a51570"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算项目编码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="580" y="0" width="450" height="24" uuid="3c6f194c-9535-475d-8b21-95fdb6207da0"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[1季度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1300" y="24" width="90" height="24" uuid="cf7cdd02-8b77-408d-83a5-74e29e9f7de9"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实际数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1390" y="24" width="90" height="24" uuid="83a8ae02-a40d-4b8a-8f4d-4fb7a0a7fc20"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[剩余数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1030" y="24" width="90" height="24" uuid="db361946-d460-489c-b77e-ec7d2c41f39d"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1030" y="0" width="450" height="24" uuid="d705482b-8723-4f50-81db-727e3bf64cbc"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[2季度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1210" y="24" width="90" height="24" uuid="2dd5906b-7f2b-4e95-b41f-68c4b55fef51"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预占数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1120" y="24" width="90" height="24" uuid="491bc694-58e6-4022-af67-3fe2688fe2a2"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[在途数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1570" y="24" width="90" height="24" uuid="1a16af6e-ab28-43e6-888f-4e2d4020b9c1"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[在途数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1480" y="24" width="90" height="24" uuid="7ccbe937-871f-4071-930f-cd2f79b64f68"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1480" y="0" width="450" height="24" uuid="03c8b581-f777-432d-85da-1b6e82914eb0"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[3季度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1840" y="24" width="90" height="24" uuid="9af6b681-dcbe-4f62-98e3-23bf5e41592c"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[剩余数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1660" y="24" width="90" height="24" uuid="f0e74b31-6629-43e9-be73-8cd781b91e02"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预占数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1750" y="24" width="90" height="24" uuid="8ae9d9e2-2687-465f-b572-7800d4b33796"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实际数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1930" y="0" width="450" height="24" uuid="325c1632-f1be-436f-a244-9489d6dd12fa"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[4季度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="2020" y="24" width="90" height="24" uuid="f3f0ec89-4a67-4e8a-aa78-a77a5afb624e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[在途数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="1930" y="24" width="90" height="24" uuid="ba4fcdfd-1a5f-4b2e-948f-b019f853dae0"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预算数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="2110" y="24" width="90" height="24" uuid="2a6518d8-ca58-4609-85da-1b6e1e58d2cd"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[预占数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="2200" y="24" width="90" height="24" uuid="739e416d-ba23-48b5-8735-8853c06d634c"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实际数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="2290" y="24" width="90" height="24" uuid="8ef85c89-4593-4920-86a7-dfb0eb0d51e1"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[剩余数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="40" height="48" backcolor="#FFFFFF" uuid="bdbcfcae-c307-4622-8c67-f024434946e8"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="true" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[序号]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24">
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="670" y="0" width="90" height="24" forecolor="#0000FF" uuid="7d99c1d6-6f67-4d59-b2bd-526db08f4e4b"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA01_TRANSIT}==" "?0:Double.valueOf($F{DATA01_TRANSIT})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=1&endmonth=3&budgettype=1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="40" y="0" width="90" height="24" uuid="7947264c-6b76-4954-9ea9-71f8e545190e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RESPNCODE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="340" y="0" width="240" height="24" forecolor="#0000FF" uuid="2fb2fa82-9571-4b2a-ba61-f49ba5e1c32b"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INDEXNAME}]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=1&endmonth=12&budgettype=-1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="130" y="0" width="120" height="24" uuid="11ee21ec-5a37-4bcc-8a28-7ef4d485ca85"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RESPNNAME}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="940" y="0" width="90" height="24" uuid="3b6d9c2a-665a-47c2-a829-8187055ffaf2"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA01_REMAIN}==" "?0:Double.valueOf($F{DATA01_REMAIN})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="760" y="0" width="90" height="24" forecolor="#0000FF" uuid="52557e50-8bc5-4308-81ca-f0fc91d3e9bf"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA01_PLAN}==" "?0:Double.valueOf($F{DATA01_PLAN})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=1&endmonth=3&budgettype=2&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="580" y="0" width="90" height="24" forecolor="#0000FF" uuid="463efb44-8dd5-412c-90fc-07fba5031f0b"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA01_BUDGET}==" "?0:Double.valueOf($F{DATA01_BUDGET})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=1&endmonth=3&budgettype=-1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="250" y="0" width="90" height="24" uuid="9700e240-64ee-4cf4-901e-ec72259486c1"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INDEXCODE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="850" y="0" width="90" height="24" forecolor="#0000FF" uuid="bc669beb-aa5e-4606-99f6-c5ea1f656bb9"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA01_ACTUAL}==" "?0:Double.valueOf($F{DATA01_ACTUAL})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=1&endmonth=3&budgettype=3&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1300" y="0" width="90" height="24" forecolor="#0000FF" uuid="17a5f647-0fc2-4393-bf20-73b99128f534"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA02_ACTUAL}==" "?0:Double.valueOf($F{DATA02_ACTUAL})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=4&endmonth=6&budgettype=3&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1120" y="0" width="90" height="24" forecolor="#0000FF" uuid="14ead874-5378-4df2-a24d-e8e8723a5a1d"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA02_TRANSIT}==" "?0:Double.valueOf($F{DATA02_TRANSIT})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=4&endmonth=6&budgettype=1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1030" y="0" width="90" height="24" forecolor="#0000FF" uuid="bbe69b47-2db9-49b4-af9d-816fce42a054"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA02_BUDGET}==" "?0:Double.valueOf($F{DATA02_BUDGET})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=4&endmonth=6&budgettype=-1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="1390" y="0" width="90" height="24" uuid="061bb159-1712-413b-95e6-86f67c29169b"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA02_REMAIN}==" "?0:Double.valueOf($F{DATA02_REMAIN})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1210" y="0" width="90" height="24" forecolor="#0000FF" uuid="c7591c93-fa58-41d0-b606-210e889950e5"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA02_PLAN}==" "?0:Double.valueOf($F{DATA02_PLAN})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=4&endmonth=6&budgettype=2&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1750" y="0" width="90" height="24" forecolor="#0000FF" uuid="684b2546-320e-4df1-bf37-9a012b2e34b7"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA03_ACTUAL}==" "?0:Double.valueOf($F{DATA03_ACTUAL})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=7&endmonth=9&budgettype=3&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1480" y="0" width="90" height="24" forecolor="#0000FF" uuid="6b51d240-9fae-4dfb-89f3-b9ec1e73a377"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA03_BUDGET}==" "?0:Double.valueOf($F{DATA03_BUDGET})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=7&endmonth=9&budgettype=-1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1570" y="0" width="90" height="24" forecolor="#0000FF" uuid="f8fb73ce-1985-44f6-9b97-b523533bd6e1"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA03_TRANSIT}==" "?0:Double.valueOf($F{DATA03_TRANSIT})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=7&endmonth=9&budgettype=1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="1840" y="0" width="90" height="24" uuid="aa51f49a-e6f8-40f7-b856-a826cbe6ed0e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA03_REMAIN}==" "?0:Double.valueOf($F{DATA03_REMAIN})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1660" y="0" width="90" height="24" forecolor="#0000FF" uuid="b85a8750-044d-4be9-a5da-119ee7fdea9e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA03_PLAN}==" "?0:Double.valueOf($F{DATA03_PLAN})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=7&endmonth=9&budgettype=2&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="2200" y="0" width="90" height="24" forecolor="#0000FF" uuid="90daf0f4-1821-4aae-b2d6-f82945bef554"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA04_ACTUAL}==" "?0:Double.valueOf($F{DATA04_ACTUAL})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=10&endmonth=12&budgettype=3&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="1930" y="0" width="90" height="24" forecolor="#0000FF" uuid="55bd25bb-4f37-4bb4-b59b-a7bd8b9ca9e4"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA04_BUDGET}==" "?0:Double.valueOf($F{DATA04_BUDGET})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=10&endmonth=12&budgettype=-1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="2020" y="0" width="90" height="24" forecolor="#0000FF" uuid="093c6292-f0a5-4bd3-8d7e-ad756e4a615e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA04_TRANSIT}==" "?0:Double.valueOf($F{DATA04_TRANSIT})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=10&endmonth=12&budgettype=1&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="2290" y="0" width="90" height="24" uuid="2c10a697-5779-4c60-a867-9dc7b1ae84d3"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA04_REMAIN}==" "?0:Double.valueOf($F{DATA04_REMAIN})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement stretchType="RelativeToBandHeight" x="2110" y="0" width="90" height="24" forecolor="#0000FF" uuid="75f64aaa-95ef-4bc4-890b-e9fcc254bd3e"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isUnderline="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATA04_PLAN}==" "?0:Double.valueOf($F{DATA04_PLAN})]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{exvtreport_url} + "?casecode="+$F{CASECODE}+"&beginmonth=10&endmonth=12&budgettype=2&respnidlist="+$F{RESPNID}+"&indexidlist="+$F{INDEXID}+"&budgetyear="+$P{budgetyear}]]></hyperlinkReferenceExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" mode="Transparent" x="0" y="0" width="40" height="24" forecolor="#000000" backcolor="#FFFFFF" uuid="07e974ea-4b6a-4bf9-87a2-99e7e7bea88d"/>
+				<box leftPadding="5" rightPadding="5">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

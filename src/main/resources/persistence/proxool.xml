@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the proxool configuration can be embedded within your own application's.
+Anything outside the "proxool" tag is ignored. -->
+<something-else-entirely>
+	<proxool>
+		<alias>manage</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/manage?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>sharedatabase</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/sharedatabase?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs001</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs001?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs002</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs002?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs003</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs003?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs004</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs004?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs005</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs005?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs006</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs006?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs007</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs007?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs008</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs008?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs009</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs009?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>wfs010</alias>
+		<driver-url>jdbc:mysql://218.245.66.221:3306/wfs010?useUnicode=true&amp;characterEncoding=utf-8&amp;useOldAliasMetadataBehavior=true&amp;autoReconnect=true&amp;failOverReadOnly=false</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="WFSproj123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<minimum-connection-count>1</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<maximum-active-time>1800000</maximum-active-time>
+		<maximum-connection-lifetime>36000000</maximum-connection-lifetime>
+		<prototype-count>1</prototype-count>
+		<test-before-use>false</test-before-use>
+		<house-keeping-test-sql></house-keeping-test-sql>
+	</proxool>
+
+</something-else-entirely>

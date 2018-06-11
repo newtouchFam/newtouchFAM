@@ -1,0 +1,81 @@
+.ext-el-mask-msg div,
+    .loading-indicator,
+    .x-tab-strip span.x-tab-strip-text,
+    .x-form-invalid-msg,
+    .x-small-editor
+    .x-form-field,
+    .x-fieldset legend,
+    .x-btn,
+    .x-btn button,
+    .x-toolbar td,
+    .x-toolbar span,
+    .x-toolbar input,
+    .x-toolbar select,
+    .x-toolbar label,
+    .x-grid3-hd-row td,
+    .x-grid3-row td,
+    .x-grid3-summary-row td,
+    .x-grid3-topbar,
+    .x-grid3-bottombar,
+    .x-grid-group-hd div,
+    .x-grid-empty,
+    .x-dd-drag-ghost,
+    .x-tree-node,
+    .x-date-middle,
+    .x-date-left,
+    .x-date-right,
+    .x-date-inner a,
+    .x-date-mp td,
+    .x-date-mp-btns button,
+    .x-tip .x-tip-mc,
+    .x-tip .x-tip-header-text,
+    .x-tip .x-tip-body,
+    .x-menu-list-item,
+    .x-tree .x-tree-node a span,
+    .x-combo-list-hd,
+    .x-combo-list-small .x-combo-list-item,
+    .x-panel-header,
+    .x-panel-tl .x-panel-header,
+    .x-panel-mc,
+    .x-window-tl .x-window-header,
+    .x-window-mc,
+    .x-progress-text,
+    .x-date-inner th,
+    .x-date-mmenu .x-menu-item,
+.x-paging-info
+{
+    font-size: 12px!important;
+}
+
+.x-grid3-row-table
+{
+    table-layout: fixed
+}
+
+.x-date-middle
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 130px; /* FF3 */
+}
+
+.x-panel-mc
+{
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+    font: normal 12px tahoma, arial, helvetica, sans-serif;
+    padding-top: 6px;
+    background: #EDF3FB;
+}
+
+.x-panel-mc .x-panel-body
+{
+    background: transparent;
+    border: 0 none;
+}
+
+.x-grid3-header
+{
+    position: relative;
+}

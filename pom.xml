@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.newtouch.cloud</groupId>
+		<artifactId>newtouch-cloud-webapp-parent</artifactId>
+		<version>1.2.0</version>
+	</parent>
+
+	<groupId>com.newtouch.wfs</groupId>
+	<artifactId>newtouch-wfs</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0</version>
+	<name>newtouch-wfs Maven Webapp</name>
+	<url>http://ecc.newtouchwork.com/</url>
+	<description>新致财务云WFS</description>
+
+	<properties>
+		<newtouch.cloud.version.rc>1.2.0</newtouch.cloud.version.rc>
+	</properties>
+
+	<build>
+		<finalName>wfs</finalName>
+		<plugins>
+			<!-- 定义编译JDK版本和源码字符集 -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<!-- package时同时生成source.jar -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<!-- 支持jetty插件调试启动 -->
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<configuration>
+					<!-- 支持jetty插件配置，避免启动慢 -->
+        			<contextXml>${project.basedir}/src/main/resources/jetty/jetty-context.xml</contextXml>
+					<!-- 支持jetty插件调试启动端口号 -->
+					<httpConnector>
+						<port>80</port>
+					</httpConnector>
+					<webApp>
+						<!-- 网站url地址根目录 -->
+						<contextPath>/wfs</contextPath>
+						<!-- 取消jetty web缓存，允许调试时修改静态资源和热部署 -->
+						<defaultsDescriptor>${project.basedir}/src/main/resources/jetty/webdefault.xml</defaultsDescriptor>
+						<!-- 多webapp root目录 -->
+						<baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
+							<resourcesAsCSV>src/main/webapp</resourcesAsCSV>
+						</baseResource>
+					</webApp>
+				</configuration>
+			</plugin>
+
+			<!-- 支持多java代码目录 -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/main/platform</source>
+								<source>src/main/sm</source>
+								<source>src/main/java</source>
+								<source>src/main/demo</source>
+								<source>src/test/java</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- cloud-commons begin -->
+		<dependency>
+			<groupId>com.newtouch.cloud</groupId>
+			<artifactId>newtouch-cloud-commons</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.cloud</groupId>
+			<artifactId>newtouch-cloud-security</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.cloud</groupId>
+			<artifactId>newtouch-cloud-sm</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.cloud</groupId>
+			<artifactId>newtouch-cloud-bcm</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<!-- cloud-commons end -->
+
+		<!-- workflow begin -->
+ 		<dependency>
+			<groupId>com.newtouch.workflow</groupId>
+			<artifactId>newtouch-workflow-core</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.workflow</groupId>
+			<artifactId>newtouch-workflow-service</artifactId>
+			<version>${newtouch.cloud.version.rc}</version>
+		</dependency>
+		<!-- workflow end -->
+
+		<!-- nsr报表工具工具 -->
+		<dependency>
+			<groupId>com.newtouch.cloud</groupId>
+			<artifactId>newtouch-simple-report</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+		<!-- dependency from newtouch-cloud-parent.pom begin -->
+		<!-- servlet3 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<!-- httpclient begin -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<!-- httpclient enb -->
+
+		<!-- webservice begin -->
+		<!-- axis1 begin -->
+ 		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis-jaxrpc</artifactId>
+		</dependency>
+		<!-- axis1 end -->
+		<!-- webservice end -->
+
+		<!-- json begin -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<!-- josn end -->
+
+		<!-- xml begin -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+		</dependency>
+		<!-- xml end -->
+
+		<!-- commons begin -->
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+		</dependency>
+		<!-- commons end -->
+
+		<!-- spring配置begin -->
+		<!-- sping核心 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<!-- 提供beanFactory功能 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<!-- 提供了配置和注解ApplicationContext -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<!-- 提供了与quartz集成功能 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<!-- web访问基础，包括jsp能力 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<!-- mvc核心，提供弄了View模式，替换struts -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<!-- 注解事务控制 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<!-- spring配置end -->
+
+		<!-- hibernate配置begin -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+		<!-- 与proxool集成 -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-proxool</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>proxool</artifactId>
+					<groupId>proxool</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- hibernate配置end -->
+
+		<!-- database begin -->
+		<dependency>
+			<groupId>com.cloudhopper.proxool</groupId>
+			<artifactId>proxool</artifactId>
+		</dependency>
+		<!-- jdbc-oracle -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+		</dependency>
+		<!-- jdbc-mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>p6spy</groupId>
+			<artifactId>p6spy</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- database end -->
+
+		<!-- jasperreports begin -->
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>5.6.1.cn</version>
+		</dependency>
+		<!-- 生成pdf -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>iTextAsian</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>iTextAsianCmaps</artifactId>
+		</dependency>
+		<!-- 生成条码 -->
+		<dependency>
+			<groupId>net.sf.barcode4j</groupId>
+			<artifactId>barcode4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.barbecue</groupId>
+			<artifactId>barbecue</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+		</dependency>
+		<!-- jasperreports end -->
+
+		<!-- scheduled task begin -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+		</dependency>
+		<!-- scheduled task end -->
+
+		<!-- log begin -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+			<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<!-- logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-access</artifactId>
+		</dependency>
+		<!-- log end -->
+
+		<!-- office begin -->
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+		</dependency>
+		<!-- office end -->
+
+		<!-- email begin -->
+		<dependency>  
+		    <groupId>com.sun.mail</groupId>  
+		    <artifactId>javax.mail</artifactId>  
+		</dependency>
+		<!-- email end -->
+
+		<!-- test suit begin -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- test suit end -->
+
+		<!-- dependency from newtouch-cloud-parent.pom end -->
+	</dependencies>
+
+	<!-- 私有仓库配置 -->
+	<repositories>
+		<repository>
+			<id>Newtouch-Cloud</id>
+			<name>Snapshots Repository of Newtouch-Cloud</name>
+			<url>http://218.245.66.222:8080/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+</project>

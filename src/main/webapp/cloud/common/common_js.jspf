@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!-- 
+			第三方库js
+		-->
+
+		<!-- 
+			引用了通用js
+		-->
+		<!-- common -->
+		<script type="text/javascript" src="cloud/common/util/json.js"></script>
+		<script type="text/javascript" src="cloud/common/util/exception.js"></script>
+
+		<!-- common.js -->
+		<script type="text/javascript" src="cloud/common/util/ssc.common.package.js"></script>
+		<script type="text/javascript" src="cloud/common/util/ArrayUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/AssertUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/BaseCondition.js"></script>
+		<script type="text/javascript" src="cloud/common/util/DateUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/ExceptionUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/FormatUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/GuidUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/HexUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/NumberUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/RenderUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/StringUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/SecurityUtil.js"></script>

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- wfs.gl模块公用引用jspf -->
+
+		<!-- meta, basepath -->
+		<%@ include file="/cloud/common/common_meta_basepath.jspf" %>
+
+		<!-- css样式表 -->
+		<%@ include file="/cloud/common/common_css_ext.jspf" %>
+		<%@ include file="/cloud/wf/common/wf_css.jspf" %>
+		<%@ include file="/cloud/ssc/common/ssc_css.jspf" %>
+		<%@ include file="/cloud/sm/common/sm_css.jspf" %>
+		<%@ include file="/wfs/gl/common/gl_css.jspf" %>
+
+		<!-- js -->
+		<%@ include file="/cloud/common/common_js.jspf" %>	
+		<%@ include file="/cloud/wf/common/wf_js.jspf" %>	
+		<%@ include file="/cloud/ssc/common/ssc_js.jspf" %>	
+		<%@ include file="/cloud/sm/common/sm_js.jspf" %>	
+		<%@ include file="/wfs/gl/common/gl_js.jspf" %>	
+
+		<!-- ext组件 -->
+		<%@ include file="/cloud/common/common_js_ext.jspf" %>
+		<%@ include file="/cloud/common/common_component_ext.jspf" %>
+		<%@ include file="/cloud/wf/common/wf_component_ext.jspf" %>
+		<%@ include file="/cloud/ssc/common/ssc_component_ext.jspf" %>
+		<%@ include file="/cloud/sm/common/sm_component_ext.jspf" %>
+		<%@ include file="/wfs/gl/common/gl_component_ext.jspf" %>

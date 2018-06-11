@@ -1,0 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- 引用了jquery-core以及jquery-ui组件 -->
+		<script type="text/javascript" src="jquery/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery.cookie.js"></script>
+		<script type="text/javascript" src="jquery/layer.js"></script>

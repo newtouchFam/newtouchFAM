@@ -1,0 +1,5 @@
+<SQL>
+select n.uqnumberingid as column0,n.varname as column1 
+  from tgl_voucher_numberings n
+  where n.uqnumberingid!='00000000-0000-0000-0000-000000000000'
+</SQL>

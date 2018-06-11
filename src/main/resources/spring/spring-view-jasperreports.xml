@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- JasperReports查询报表显示 -->
+	<bean id="jasperReportsClassicView" class="com.newtouch.cloud.common.jasperreports.view.JasperReportsClassicView">
+		<property name="reportDataKey" value="data" />
+		<property name="exporterParameters">
+			<map>
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.CHARACTER_ENCODING" value="UTF-8" />
+				<!-- HTML时的白色背景图片(px)路径，从webapp/webRoot路径开始设置 -->
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IMAGES_URI" value="/resources/images/" />
+				<!-- 默认情况使用px作为字体单位，html输出的字体会缩小 -->
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.SIZE_UNIT" value="pt" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- 凭证打印 -->
+	<bean id="voucherPrintView" class="com.newtouch.cloud.common.jasperreports.view.JRBaseView">
+		<property name="reportDataKey" value="data" />
+		<property name="exporterParameters">
+			<map>
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.CHARACTER_ENCODING" value="UTF-8" />
+				<!-- HTML时的白色背景图片(px)路径，从webapp/webRoot路径开始设置 -->
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IMAGES_URI" value="/resources/images/" />
+				<!-- 默认情况使用px作为字体单位，html输出的字体会缩小 -->
+				<entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.SIZE_UNIT" value="pt" />
+			</map>
+		</property>
+	</bean>
+
+</beans>

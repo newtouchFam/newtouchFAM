@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nsreport>
+	<calculator code="bq" desc="本期数" class="com.newtouch.nwfs.gl.voucherbook.nsr.BQCellCalculator" />
+	<calculator code="lj" desc="累计数" class="com.newtouch.nwfs.gl.voucherbook.nsr.LJCellCalculator" />
+	<calculator code="nc" desc="年初数" class="com.newtouch.nwfs.gl.voucherbook.nsr.NCCellCalculator" />
+	<calculator code="qm" desc="期末数据" class="com.newtouch.nwfs.gl.voucherbook.nsr.QMCellCalculator" />
+
+	<calculator code="nc_ex" desc="年初数(新)" class="com.newtouch.nwfs.gl.voucherbook.nsr.NCCellCalculator_Ex" />
+	<calculator code="qm_ex" desc="期末数据(新)" class="com.newtouch.nwfs.gl.voucherbook.nsr.QMCellCalculator_Ex" />
+
+	<calculator code="jzbq" desc="本期数" class="com.newtouch.nwfs.gl.voucherbook.nsr.JZBQCellCalculator" />
+	<calculator code="jzlj" desc="累计数" class="com.newtouch.nwfs.gl.voucherbook.nsr.JZLJCellCalculator" />
+	<calculator code="jznc" desc="年初数" class="com.newtouch.nwfs.gl.voucherbook.nsr.JZNCCellCalculator" />
+	<calculator code="jzqm" desc="期末数据" class="com.newtouch.nwfs.gl.voucherbook.nsr.JZQMCellCalculator" />
+</nsreport>

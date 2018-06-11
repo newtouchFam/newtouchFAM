@@ -1,0 +1,10 @@
+<SQL>
+	SELECT tl.UQLEDGETYPEID AS column0, 
+      tl.VARLEDGETYPENAME AS column1 
+	FROM tgl_ledgetype tl 
+	INNER JOIN tgl_account_ledgetype tal 
+	ON tal.UQLEDGETYPEID = tl.UQLEDGETYPEID 
+	WHERE tal.UQACCOUNTID = :accountid 
+	AND tl.INTISLASTLEVEL = 1 
+	AND tl.INTSTATUS = 2 
+</SQL>

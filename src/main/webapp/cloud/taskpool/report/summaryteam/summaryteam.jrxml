@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="任务组工作量统计表" language="groovy" pageWidth="950" pageHeight="595" orientation="Landscape" columnWidth="910" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" scriptletClass="com.freesky.ssc.core.report.common.JasperScriptLet" isIgnorePagination="true">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="headerParams" class="java.util.Map"/>
+	<parameter name="list" class="java.lang.Object"/>
+	<parameter name="subreport_url" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="exvtreport_url" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="900" height="30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="15" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{headerParams}.get("title")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="0" y="30" width="360" height="24"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["日期范围："+$P{headerParams}.get("begindate")+"至"+$P{headerParams}.get("enddate")]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<subreport isUsingCache="false">
+				<reportElement x="0" y="0" width="900" height="24" isRemoveLineWhenBlank="true"/>
+				<subreportParameter name="exvtreport_url">
+					<subreportParameterExpression><![CDATA[$P{exvtreport_url}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="headerParams">
+					<subreportParameterExpression><![CDATA[$P{headerParams}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRMapArrayDataSource($P{list})]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{subreport_url}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

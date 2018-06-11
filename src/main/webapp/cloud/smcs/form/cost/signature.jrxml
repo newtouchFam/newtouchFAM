@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="signature" language="groovy" pageWidth="950" pageHeight="700" orientation="Landscape" columnWidth="950" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="31"/>
+	<property name="ireport.y" value="0"/>
+	<summary>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="330" y="44" width="138" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[归口部门负责人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="330" y="103" width="138" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[财务总监]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="663" y="103" width="104" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[公司总经理]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="663" y="48" width="137" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[财务部门负责人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="-2" y="103" width="140" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[分管副总经理 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="-2" y="44" width="140" height="28"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[申请部门负责人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="767" y="107" width="157" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="468" y="107" width="153" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="138" y="107" width="148" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="800" y="48" width="124" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="468" y="48" width="153" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="138" y="48" width="148" height="24"/>
+				<textElement textAlignment="Left">
+					<font fontName="黑体" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

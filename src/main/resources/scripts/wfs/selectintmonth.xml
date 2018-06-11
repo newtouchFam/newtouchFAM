@@ -1,0 +1,4 @@
+<SQL>
+	select  CAST(tc.CATEGORYCODE as  SIGNED) as intmonth from tob_category tc 
+		where tc.CATEGORYTYPE = '10000006' ORDER BY (tc.CATEGORYCODE+0)
+</SQL>

@@ -1,0 +1,13 @@
+<SQL>
+	select  case tc.CATEGORYCODE 
+				when '1000' then 0  
+				when '1006' then 2 
+				else 1 end as column0, 
+			case tc.CATEGORYNAME 
+				when '全部' then '全部'  
+				when '已记账' then '已记账' 
+				else '未记账' end as column1 
+	        from tob_category tc  
+	        where tc.CATEGORYTYPE = '10000007' 
+	        GROUP BY (column0) 
+</SQL>

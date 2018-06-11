@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- 引用了wf组件 -->
+
+		<!-- wf -->
+
+		<script type="text/javascript" src="cloud/wf/common/util/Portal.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/PortalColumn.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/Portlet.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/wfGlobal.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/dwrcallutil.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/RowExpander.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/common.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/ext-patch-TextField.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/wfwebui.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/WfProcData.js"></script>
+		<script type="text/javascript" src="cloud/wf/common/util/WfWorkData.js"></script>
+
+		<script type="text/javascript" src="cloud/wf/common/util/upload/xyWfUploadFile.js"></script>
+
+		<!-- wf公用组件 -->
+		<script type="text/javascript" src="cloud/wf/component/XyCalcRecord.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyCategory.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyCheckHistoryGridPanel.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyColFormat.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyColumnModel.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyComboBox.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyComboBoxEx.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyComboBoxTree.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyComboBoxTreeEx.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyEditor.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyFormat.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGrid.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridUtil.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridEx.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridPanel.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyEditorGridPanel.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridView.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridEditor.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyGridSummary.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyMessageBox.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyMoneyField.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/XyTree.js"></script>
+
+		<!-- wf业务组件 -->
+		<script type="text/javascript" src="cloud/wf/component/approveIdioms.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/processChartWin.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/showTransImg.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/showCheckHistory.js"></script>
+		<script type="text/javascript" src="cloud/wf/component/ApproveUserDialog.js"></script>
+		

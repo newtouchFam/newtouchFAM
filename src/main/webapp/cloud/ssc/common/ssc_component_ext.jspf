@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- ssc-component-ssc -->
+		<script type="text/javascript" src="cloud/ssc/component/combobox/BusiClassComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/CategoryComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/CurrencyComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/FormTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/FundYearComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/IfInterfaceComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/IfOutSystemComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/WFProcessTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/combobox/YearComboBox.js"></script>
+
+		<script type="text/javascript" src="cloud/ssc/component/dialog/BaseUploadDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/BusiEntityDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/ContractExecQueryDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/CostCenterDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/FactorDataDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/TPTeamDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/TPTeamUserDialog.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/dialog/WFProcessDialog.js"></script>
+
+		<script type="text/javascript" src="cloud/ssc/component/field/BillTypeTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/BusiClassField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/CategoryTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/ContractExecQuery.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/CostCenterTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/CurrencyField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/FormTypeField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/FundIndexTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/FundRespnTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/TPTacheTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/TPTeamTGField.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/field/WFProcessTGField.js"></script>
+
+		<!-- ssc-panel -->
+		<script type="text/javascript" src="cloud/ssc/component/panel/BaseFormPanel.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/panel/BaseFormHeaderPanel.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/panel/BaseFormGridPanel.js"></script>
+		<script type="text/javascript" src="cloud/ssc/component/panel/common_attachment_panel.js"></script>
+
+<!--
+ 		<script type="text/javascript" src="cloud/ssc/component/panel/common_checkhistory_panel.js"></script>
+--> 		

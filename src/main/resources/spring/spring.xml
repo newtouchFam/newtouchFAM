@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-4.3.xsd"
+	default-lazy-init="false">
+
+	<!-- 上下文配置，包括注解扫描自动装配和xml配置 -->
+	<import resource="classpath:/spring/spring-context.xml" />
+
+	<!-- 静态数据源配置 -->
+<!--
+	<import resource="classpath:/spring/spring-ds.xml" />
+-->
+
+	<!-- 动态多数据源切换配置 -->
+	<import resource="classpath:/spring/spring-ds-dynamic.xml" />
+
+	<!-- 使用JPA标准的EntityManager作为持久化容器 -->
+	<import resource="classpath:/spring/spring-persistence-em.xml" />
+
+	<!-- 工作流(workflow),暂不启用 -->
+	<import resource="classpath:/workflow/spring-context-workflow.xml" />
+</beans>

@@ -1,0 +1,58 @@
+.x-item-disabled * 
+{
+	color:black !important;
+	cursor:default !important;
+}
+.x-item-disabled {
+	color:black !important;
+	cursor:default;
+	opacity:.99;
+}
+.x-item-readonly
+{
+	color:black!important;
+	cursor:default!important;
+	background:#f9fafb url(../images/xy-text-bg-dis.gif) repeat-x 0 0!important;/*#f9fafb;*/
+	opacity:.99;
+	-moz-opacity:.99;
+	filter:alpha(opacity=99);
+}
+.x-item-readonly-con
+{
+	color:black!important;
+	opacity:1!important;
+	-moz-opacity:1!important;
+	filter:alpha(opacity=99)!important;
+}
+.x-textfield-readonly
+{
+	background : #dddddd!important;
+}
+.xy-go-to-post
+{
+	background-image:url(../images/go-to-post.gif)!important;
+}
+.xy-icon-complete
+{
+	background-image:url(../images/icon-complete.gif)!important;
+}
+.xy-panel-close
+{
+	background-image:url(../images/panel-close.gif)!important;
+}
+.xy-icon-ok_trans
+{
+	background-image:url(../images/ok_trans.gif)!important;
+}
+.xy-icon-all
+{
+	background-image:url(../images/icon-all.gif)!important;
+}
+.xy-icon-show-active
+{
+	background-image:url(../images/icon-show-active.gif)!important;
+}
+.xy-icon-show-all
+{
+	background-image:url(../images/icon-show-all.gif)!important;
+}

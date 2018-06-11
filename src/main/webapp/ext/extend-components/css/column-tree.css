@@ -1,0 +1,65 @@
+/*
+ * Ext JS Library 2.0.2
+ * Copyright(c) 2006-2008, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+.x-column-tree .x-tree-node {
+    zoom:1;
+}
+.x-column-tree .x-tree-node-el {
+    /*border-bottom:1px solid #eee; borders? */
+    zoom:1;
+}
+.x-column-tree .x-tree-selected {
+    background: #d9e8fb;
+}
+.x-column-tree  .x-tree-node a {
+    line-height:18px;
+    vertical-align:middle;
+}
+.x-column-tree  .x-tree-node a span{
+	
+}
+.x-column-tree  .x-tree-node .x-tree-selected a span{
+	background:transparent;
+	color:#000;
+}
+.x-tree-col {
+    float:left;
+    overflow:hidden;
+    padding:0 1px;
+    zoom:1;
+}
+
+.x-tree-col-text, .x-tree-hd-text {
+    overflow:hidden;
+    -o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+    padding:3px 3px 3px 5px;
+    white-space: nowrap;
+    font:normal 11px arial, tahoma, helvetica, sans-serif;
+}
+
+.x-tree-hd {
+    float:left;
+    overflow:hidden;
+    border-left:1px solid #eee;
+    border-right:1px solid #d0d0d0;
+}
+
+/*new add*/
+.x-tree-col-text{height: 30px;padding:0 3px;line-height: 30px;}
+.x-tree-hd {
+    float:left;
+    overflow:hidden;
+    border-left:1px solid #eee;
+    border-right:1px solid #d0d0d0;
+}
+.x-tree-hd-text{padding: 4px 3px 5px 5px;}
+.x-column-tree .x-tree-node-el{border-bottom: 1px solid #f0f0f0;}
+.x-column-tree .x-tree-node-el:nth-child(2){background: #fbfbfb;}
+.x-column-tree .x-tree-node-el .x-tree-col{position: relative;}
+.x-column-tree .x-tree-node-el .x-tree-col:before{position: absolute;content: '';width: 1px;background: #f0f0f0;height: 100%;right: 0;}

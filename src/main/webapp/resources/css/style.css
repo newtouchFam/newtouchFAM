@@ -1,0 +1,191 @@
+table
+{
+margin:0;
+padding:0;
+font-size: 9pt;
+font-family: "Tahoma", "宋体";
+border-collapse:collapse;
+}
+.border_none {
+border:none;
+}
+td
+{
+margin:0;
+padding:0;
+font-size: 9pt;
+font-family: "Tahoma", "宋体";
+border-collapse:collapse;
+}
+Input{
+font-size:9pt;
+font-family: "Tahoma", "宋体";
+/*border:expression(this.type=="radio"?"":" 1px solid #000000");*/
+padding:1px;
+}
+.Input_noBorder {
+font-size:9pt;
+font-family: "Tahoma", "宋体";
+border:none;
+padding:1px;
+}
+TABLE.fb_result {
+margin:0;
+padding:1;
+font-size: 9pt;
+font-family: "Tahoma", "宋体";
+border-collapse:collapse;
+width:100%;
+border:1px solid #A7A7A7;height:24px;
+border-width:1px
+}
+.fb_result td{
+padding:2px;border:1px solid #A7A7A7;height:24px;
+}
+.fb_result td.fb_result_title {
+padding-left:10px;order:1px solid #6DA3CA;BACKGROUND:url(main_bar_bg.gif) repeat-x;height:23px;font-weight:bold;color:#124F98;
+}
+.fb_result td.fb_result_head {
+border-left-width: 1;padding:2px; border:1px solid #ADD0E5;filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#CFE1F6', endColorStr='#F8FAFE', gradientType='0');color:#124F98;font-weight:bold;
+}
+.fb_result tr.fb_result_content {
+BACKGROUND: #F8F8F8;
+}
+.fb_result tr.fb_result_content_ {
+BACKGROUND: FFFFFF;
+}
+.fb_result tr.onmouseover {
+BACKGROUND: #FBF2DD;
+}
+.fb_result_bottom {border:none}
+.fb_result td.fb_result_bottom {
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#E5E5E5', endColorStr='#F7F7F7', gradientType='0');text-align:right
+}
+.fb_result td.fb_result_divide {
+FONT-SIZE: 12px;
+BACKGROUND: #EFEFEF;
+FONT-FAMILY: "宋体";
+HEIGHT: 20px;
+text-decoration: none;
+border-bottom:1px solid buttonface;
+}
+TABLE.fb_add {
+width:100%;border:1px solid #ADD0E5;margin-top:5px;
+}
+.fb_add_title {
+border:1px solid #6DA3CA;BACKGROUND:url(main_bar_bg.gif) repeat-x;height:23px;padding-left:10px;font-weight:bold;color:#000000
+}
+.nav {height:20px;margin-left:8px;padding-left:18px;padding-top:3px;BACKGROUND:url(ico_nav.gif) no-repeat left 3px;font-weight:bold;color:#124F98;float:left}
+.fb_add_head {
+padding:2px;text-align:left;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;font-weight:bold;
+}
+.fb_add_head_center {
+padding:2px;text-align:center;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;font-weight:bold;
+}
+.fb_text{
+font:normal 12px tahoma,arial,helvetica,sans-serif;padding:2px;border:1px solid #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.fb_add_content_left {
+padding:2px;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;text-align:left;
+}
+.fb_add_content_right {
+padding:2px;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;text-align:right;
+}
+.fb_add_content_center {
+padding:2px;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;text-align:center;
+}
+.fb_add_content {
+padding:2px;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;text-align:left;
+}
+.fb_add_bluebg {
+background:#CAD9EC;
+}
+.fb_add_whitebg {
+background:#ffffff;
+}
+.fb_result_content_ {
+FONT-FAMILY: "宋体";
+text-decoration: none;
+border-bottom:1px solid buttonface;
+}
+.fb_add_bottom {
+padding:2px;height:20px;text-align:center;border:1px solid #6DA3CA;BACKGROUND-color:#EFF7FF;
+}
+.fb_content_bg{
+background:url("/internet/images/INNERPAGE_r1_c1.jpg") no-repeat right bottom;
+}
+.frame_w {
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #D4D0C8;
+border-right-color: #404040;
+border-bottom-color: #404040;
+border-left-color: #D4D0C8;
+}
+.frame_l {
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #FFFFFF;
+border-right-color: #808080;
+border-bottom-color: #808080;
+border-left-color: #FFFFFF;
+background-color: buttonface;
+}
+.fb_result_onmouseover {
+BACKGROUND: #F8F8F8;
+color:highlighttext;
+FONT-FAMILY: "宋体";
+text-decoration: none;
+}
+.fb_result_onmouseover2 {
+BACKGROUND: #333333;
+color:highlighttext;
+FONT-FAMILY: "宋体";
+text-decoration: none;
+}
+.fb_result_blank {
+font-family: "新宋体";
+font-size: 12px;
+font-weight: normal;
+color: #333333;
+}
+A:link {
+COLOR: #344165;TEXT-DECORATION: none
+}
+A:visited {
+COLOR: #344165;TEXT-DECORATION: none
+}
+A:active {
+COLOR: #344165;TEXT-DECORATION: none
+}
+A:hover {
+COLOR: #344165; TEXT-DECORATION: underline
+}
+/*-----------分页按钮样式------------------*/
+.btn3_mouseout 
+{
+margin-right:4px;width:60px;BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+} 
+.btn3_mouseover 
+{
+margin-right:4px;width:60px;BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+.btn3_mousedown
+{
+margin-right:4px;width:60px;BORDER-RIGHT: #FFE400 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #FFE400 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #FFE400 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #FFE400 1px solid
+} 
+.btn3_mouseup 
+{
+margin-right:4px;width:60px;BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+} 

@@ -1,0 +1,4 @@
+<SQL>
+	select  CAST(tc.CATEGORYCODE as  SIGNED) as intyear from tob_category tc 
+		where tc.CATEGORYTYPE = '10000005' ORDER BY (tc.CATEGORYCODE+0)
+</SQL>

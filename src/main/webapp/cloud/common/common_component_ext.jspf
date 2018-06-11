@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- 引用了ssc基础组件(ext) -->
+
+		<!-- ssc.common -->
+  		<script type="text/javascript" src="cloud/common/util/ssc-common.js"></script>
+		<script type="text/javascript" src="cloud/common/util/FormUtil.js"></script>
+ 		<script type="text/javascript" src="cloud/common/util/GlobalParamUtil.js"></script>
+ 		<script type="text/javascript" src="cloud/common/util/GridUtil.js"></script>
+ 		<script type="text/javascript" src="cloud/common/util/Map.js"></script>
+		<script type="text/javascript" src="cloud/common/util/MsgUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/TreeUtil.js"></script>
+		<script type="text/javascript" src="cloud/common/util/XyGlobal.js"></script>
+
+		<!-- common-component -->
+ 		<script type="text/javascript" src="cloud/common/ext/component/SearchField.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/PageSizePlugin.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BasePagingToolBar.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseSearchField.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseTree.js"></script>
+
+		<script type="text/javascript" src="cloud/common/ext/component/BaseComboBox.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseSimpleComboBox.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseListComboBox.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseTreeComboBox.js"></script>
+
+		<script type="text/javascript" src="cloud/common/ext/component/BaseDialog.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseListDialog.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseTreeDialog.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseListTreeDialog.js"></script>
+		
+		<script type="text/javascript" src="cloud/common/ext/component/BaseListField.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseTreeField.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/BaseListTreeTGField.js"></script>
+
+		<script type="text/javascript" src="cloud/common/ext/component/SimpleComboBox.js"></script>
+		
+		<!-- JR报表组件 -->
+		<script type="text/javascript" src="cloud/common/ext/component/JRReportFrame.js"></script>
+		<script type="text/javascript" src="cloud/common/ext/component/JRPagingToolbar.js"></script>

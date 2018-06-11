@@ -1,0 +1,48 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.newtouch.cloud.security">
+
+	<!-- 登录账号实体 -->
+	<class name="com.newtouch.cloud.security.entity.LoginAccountEntity" table="tsys_userbase">
+		<id name="loginAccountID" type="java.lang.String" column="id" />
+		<property name="loginName" type="java.lang.String" column="varname" />
+		<property name="loingAccountName" type="java.lang.String" column="displayname" />
+		<property name="password" type="java.lang.String" column="pwd" />
+		<property name="status" type="java.lang.Integer" column="intstate" />
+	</class>
+
+	<!-- 账号登录错误记录实体 -->
+	<class name="com.newtouch.cloud.security.entity.LoginErrorEntity" table="tsys_login_error">
+		<id name="recordID" type="java.lang.String" column="recordid" />
+		<property name="sessionID" type="java.lang.String" column="sessionid" />
+		<property name="loginAccountID" type="java.lang.String" column="loginaccountid" />
+		<property name="loginName" type="java.lang.String" column="loginname" />
+		<property name="loginDate" type="java.lang.String" column="logindate" />
+		<property name="password" type="java.lang.String" column="password" />
+	</class>
+
+	<!-- 账号密码修改历史实体 -->
+	<class name="com.newtouch.cloud.security.entity.PasswordHistEntity" table="tsys_password_hist">
+		<id name="recordID" type="java.lang.String" column="recordid" />
+		<property name="loginAccountID" type="java.lang.String" column="loginaccountid" />
+		<property name="operateDate" type="java.lang.String" column="operatedate" />
+		<property name="operatorID" type="java.lang.String" column="operatorid" />
+		<property name="operateType" type="java.lang.Integer" column="operatetype" />
+		<property name="operateTypeDesc" type="java.lang.String" column="operatetypedesc" />
+		<property name="memo" type="java.lang.String" column="memo" />
+		<property name="oldPassword" type="java.lang.String" column="oldpassword" />
+		<property name="newPassword" type="java.lang.String" column="newpassword" />
+	</class>
+
+	<!-- 安全策略实体 -->
+	<class name="com.newtouch.cloud.security.entity.SecurityPolicyEntity" table="tsys_securitypolicy">
+		<id name="code" type="java.lang.String" column="code" />
+		<property name="memo" type="java.lang.String" column="memo" />
+		<property name="status" type="java.lang.Integer" column="status" />
+		<property name="config" type="java.lang.String" column="config" />
+	</class>
+
+</hibernate-mapping>

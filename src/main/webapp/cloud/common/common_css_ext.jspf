@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- 引用了ext.ui组件css样式表 -->
+
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all.css" />
+		<link rel="stylesheet" type="text/css" href="ext/extend-components/css/column-tree.css" />
+		<link rel="stylesheet" type="text/css" href="ext/extend-components/css/Ext.ux.grid.RowActions.css"/>
+		<link rel="stylesheet" type="text/css" href="ext/extend-components/css/radiooperate.css" />
+		<link rel="stylesheet" type="text/css" href="ext/extend-components/css/GroupHeaderPlugin.css" />
+
+		<link rel="stylesheet" type="text/css" href="resources/css/ext-patch.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/m8-common.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/m8pcm-common.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/ssc-common.css" />
+
+		<!-- 工作流图标 -->
+		<link rel="stylesheet" type="text/css" href="cloud/common/util/FileUploadField.css" />

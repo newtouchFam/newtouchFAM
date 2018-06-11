@@ -1,0 +1,92 @@
+.us_btn{cursor:pointer;background: #147bf0;color: #FFF;border: none;border-radius: 2px;-webkit-border-radius: 2px;margin: 0 5px;}
+.us_btn:hover{background: #136ed6;}
+.btn_md{padding: 5px 20px;font-size: 12px;}
+
+.test_btn_box a{padding:5px 15px;border-radius: 3px; -webkit-border-radius: 3px;-moz-border-radius: 3px;color: #fff;margin-left: 5px;transition: .3s;-webkit-transition: .3s;cursor: pointer;cursor:hand\9;}
+.test_share{background: #00b79b;}
+.test_share:hover{background: #06c9ab;color:#fff;}
+.test_personal{background: #fa6b0c;}
+.test_personal:hover{background: #ff8a3d;color:#fff;}
+/*--------鐧诲綍椤�--------*/
+.lg_back{background: #fff;}
+.lg_bg{
+    width: 100%;
+    height: 100%;
+    background: url(../images/lg_bg.png) no-repeat;
+    background-size: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='../images/lg_bg.png',
+            sizingMethod='scale')\9;
+}
+
+.lg_header{background: #2c77b5;
+    -webkit-box-shadow:  0px 5px 5px rgba(0,0,0,.08);
+    box-shadow:  0px 5px 5px rgba(0,0,0,.08);
+    -moz-box-shadow:  0px 5px 5px rgba(0,0,0,.08);}
+	
+.lg_header_box{width: 1180px;margin: 0 auto;height: 60px;line-height: 60px;font-size: 18px;color: #FFF;}
+.lg_header_box h2{font-size: 18px;font-weight: normal;color: #fff;}
+.lg_header_box img{margin-top: 18px;margin-right: 20px;width:120px;}
+.lg_content{width: 960px;margin: 50px auto 0 auto;}
+.lg_right{margin-top: 70px;}
+.lg_left{background: url(../images/lg_left_img.png);width: 517px;height: 393px;background-size: 100%;-webkit-background-size: 100%;}
+.lg_box{
+    background: #FFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    padding: 25px;
+    -webkit-box-shadow:  8px 8px 5px rgba(0,0,0,.08);
+    box-shadow:  8px 8px 5px rgba(0,0,0,.08);
+    -moz-box-shadow:  8px 8px 5px rgba(0,0,0,.08);
+    position: relative;
+    z-index: 10000;
+}
+.lg_box h2{color: #147bf0;font-size: 18px;font-weight: normal;margin: 10px 0;}
+.lg_control{width:265px;border:1px solid #d3d3d3;margin:8px 0;height: 43px;padding-left: 42px;border-radius: 3px;-webkit-border-radius: 3px;overflow: hidden;}
+.lg_control input{border: none;width: 255px;height: 43px;line-height: 43px;padding-right:10px;}
+.zhangtao{background-image: url(../images/lg_zhangtao.png)}
+.user{background-image: url(../images/lg_user.png)}
+.pass{background-image: url(../images/lg_pass.png)}
+.lg_btn{width: 100%;background: #147bf0!important;margin: 10px 0!important;padding: 10px 0;}
+.lg_btn:hover{background: #136ed6!important;}
+.lg_box a{color: #147bf0;}
+.lg_bottom{position: absolute;bottom: 0;left: 0;width: 100%;}
+
+.lg_footer{height: 50px;line-height: 50px;height: 30px\9;line-height: 30px\9;text-align: center;font-size: 19px;color: #999;/*border-top: 1px solid #e6e6e6;*/background: url(../images/lg_bt_bg.png) repeat-x;}
+
+
+.lg_popup_panel{display: none;}
+.lg_popup{
+    background: #fff;border-radius: 5px;
+    -webkit-border-radius: 5px;position:fixed;
+    left: 50%;
+    top: 50%;
+    width: 430px;margin: -218px 0 0 -215px;z-index: 10000;overflow: hidden;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.popup_title{height: 50px;line-height: 50px;margin: 0 20px;border-bottom: 1px solid #ccc;}
+.popup_title span{display: inline-block;width: 100px;text-align: center;border-bottom: 2px solid #2c77b5;color:#2c77b5;height: 49px;line-height: 49px;}
+.popup_control{width:370px;margin: 0px auto;overflow: hidden;}
+.popup_control label{width: 80px;text-align: right;display: inline-block;height: 37px;line-height: 37px;padding-right: 10px;}
+.popup_form{padding: 20px 0 0 0;}
+.popup_control .lg_control{margin: 0px auto;padding: 0;height: 35px;/* display: inline-block; */}
+.popup_control .lg_control input{width: 100%;padding: 0 10px;height: 35px;line-height: 35px;}
+.qr_btn{background: #f3f4f6;border-top: 1px solid #ccc;padding: 20px 0;margin-top: 0px;text-align: center;}
+.popup_control p{height: 20px;line-height: 20px;display: block;}
+.popup_btn{text-align: center;width: 110px;margin: 0 auto!important;display: inline-block;}
+.popup_btn.cancel{background: #ccc!important;}
+
+.lg_popup_shade{
+    width: 100%;height: 100%;position: fixed;z-index: 9999;top: 0;bottom: 0;
+    /*background:rgba(0,0,0,0.5);
+    opacity:0.5;
+    filter:alpha(opacity=50)\9;*/
+    background: url(../images/lg_popup_shade.png) repeat;
+}
+
+.name_label{height:43px;line-height:43px;margin:8px 5px 8px 0;width:70px;text-align:right;}

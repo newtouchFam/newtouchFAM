@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsrconfig>
+	<!-- 列头统一定义 -->
+	<columns>
+		<!--
+			field : 列字段名，与JapserReports字段名对应
+			yearadjust : 统一定义，如果单元格中有定义，则忽略
+			monthadjust : 统一定义，如果单元格中有定义，则忽略
+		-->
+		<column field="item"/>
+		<column field="row" />
+		<column field="oldlj" yearadjust = "-1"/>
+		<column field="bq"  />
+		<column field="newlj"/>
+	</columns>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="一 、营业总收入" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="1" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6001" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6001" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6001" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="    其中：营业收入" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="2" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6001" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6001" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6001" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="二、营业总成本" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="3" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="6401,6403,6601,6602,6603,6701"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="6401,6403,6601,6602,6603,6701"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="6401,6403,6601,6602,6603,6701"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="   其中：营业成本" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="4" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6401"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6401"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6401"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         营业税金及附加" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="5" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6403"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6403"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6403"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         销售费用" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="6" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6601"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6601"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6601"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         管理费用" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="7" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6602"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6602"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6602"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="             其中：研究与开发费" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="8" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660234"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="660234"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660234"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         财务费用" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="9" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6603"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6603"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6603"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="             其中：利息支出" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="10" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="660301,66039001"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="660301,66039001"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="660301,66039001"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="                   利息收入" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="11" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660302"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="660302"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660302"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="                   汇兑净损失（净收益以“-”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="12" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660303"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="660303"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="660303"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         资产减值损失" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="13" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6701"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6701"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6701"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         其他" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="14" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="     加：公允价值变动净收益（损失以“－”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="15" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6101" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6101" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6101" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="         投资收益（损失以“－”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="16" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6111" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6111" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6111" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="            其中：对联营企业和合营企业的投资收益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="17" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="61110101"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="61110101"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="61110101"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="三、营业利润（亏损以“－”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="18" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="    加：营业外收入" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="19" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6301" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6301" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6301" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="     其中：非流动资产处置利得" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="20" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="630102,630103,630104,630105,630106,630107,630108,630109" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="630102,630103,630104,630105,630106,630107,630108,630109" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="630102,630103,630104,630105,630106,630107,630108,630109" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="           非货币性资产交换利得" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="21" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630112" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="630112" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630112" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="           政府补助" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="22" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630115" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="630115" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630115" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="           债务重组利得" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="23" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630114" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="630114" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="630114" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="    减：营业外支出" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="24" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6711"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6711"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6711"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="        其中：非流动资产处置损失" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="25" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="671102,671103,671104,671105,671106,671107,671108,671109"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="671102,671103,671104,671105,671106,671107,671108,671109"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="671102,671103,671104,671105,671106,671107,671108,671109"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="              非货币性资产交换损失" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="26" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="671112"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="671112"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="671112"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="              债务重组损失" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="27" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="671111"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="671111"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="671111"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="四、利润总额（亏损总额以“－”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="28" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="    减：所得税费用" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="29" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6801"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="6801"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="6801"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="五、净利润（净亏损以“－”号填列）" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="30" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="    归属于母公司所有者的净利润" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="31" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="     *少数股东损益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="32" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="六、其他综合收益   " />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="33" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="7101" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="7101" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="7101" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="   (一)以后不能重分类进损益的其他综合收益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="34" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       1、重新计量设定受益计划净负债或净资产的变动" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="35" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       2、权益法下在被投资单位不能重分类进损益的其他综合收益中享有的份额" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="36" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="   (二)以后将重分类进损益的其他综合收益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="37" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="710101,710102,710103" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="710101,710102,710103" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="710101,710102,710103" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       1、权益法下在被投资单位将重分类进损益的其他综合收益中享有的份额 " />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="38" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710101" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="710101" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710101" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       2、可供出售金融资产公允价值变动损益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="39" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710102" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="710102" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710102" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       3、持有至到期投资重分类为可供出售金融资产损益" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="40" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710103" direct = "-1"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="eq" account="710103" direct = "-1"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="eq" account="710103" direct = "-1"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       4、现金流量套期损益的有效部分" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="41" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       5、外币财务报表折算差额" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="42" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="七、综合收益总额" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="43" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="        归属于母公司所有者的综合收益总额" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="44" />
+		<!-- 上年同期数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+		<!-- 本月发生数-->
+		<cell type="cal" formula="bq" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+		<!-- 本年累计数 -->
+		<cell type="cal" formula="lj" mode="in" account="-6001,-6401,-6403,-6601,-6602,-6603,-6701,-6101,-6111,-6301,-6711,-6801,-7101"/>
+	</row>
+	<row>
+		<!-- 项目 -->
+		<cell type="fix" valuetype="string" value="       *归属于少数股东的综合收益总额" />
+		<!-- 行次 -->
+		<cell type="fix" valuetype="integer" value="45" />
+		<!-- 上年同期数 -->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本月发生数-->
+		<cell type="fix" valuetype="money" value=" " />
+		<!-- 本年累计数 -->
+		<cell type="fix" valuetype="money" value=" " />
+	</row>
+</nsrconfig>

@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- 引用了ext-core及ext.ui组件 -->
+
+		<!-- ext -->
+		<script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript" src="ext/ext-all.js"></script>
+		<script type="text/javascript" src="ext/ext-lang-zh_CN.js"></script>
+		<script type="text/javascript" src="ext/FileUploadField.js"></script>
+		<script type="text/javascript" src="ext/form/CheckboxGroup.js"></script>
+		<script type="text/javascript" src="ext/form/RadioGroup.js"></script>
+		<script type="text/javascript" src="ext/tree/ColumnNodeUI.js"></script>
+		<script type="text/javascript" src="ext/extend-components/SearchField.js"></script>
+		<script type="text/javascript" src="ext/extend-components/TabCloseMenu.js"></script>
+		<script type="text/javascript" src="ext/extend-components/TabScrollerMenu.js"></script>
+		<script type="text/javascript" src="ext/extend-components/DownloadExcel.js"></script>
+		<script type="text/javascript" src="ext/extend-components/numberformat.js"></script>
+		<script type="text/javascript" src="ext/extend-components/Ext.ux.grid.RowActions.js"></script>
+		<script type="text/javascript" src="ext/extend-components/ext-expand.js"></script>
+		<script type="text/javascript" src="ext/extend-components/pcm-patch.js"></script>
+		<script type="text/javascript" src="ext/extend-components/XycenterWindowPlugin.js"></script>

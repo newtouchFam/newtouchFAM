@@ -1,0 +1,12 @@
+<SQL>
+SELECT 
+       a.uqglobalperiodid as column0,
+       a.intyearmonth as column1,
+       date_format(str_to_date(a.dtbegin, '%Y-%m-%d'), '%Y-%m-%d') as column2,
+       a.varname as column3,
+       a.intyear as column4,
+       a.intmonth as column5       
+  FROM tgl_global_periods a
+ where a.INTSTATUS in (0,2) 
+ ORDER BY a.intyearmonth DESC
+</SQL>

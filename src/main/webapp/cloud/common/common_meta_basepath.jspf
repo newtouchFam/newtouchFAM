@@ -1,0 +1,62 @@
+	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+	<!-- 
+		定义页面基本meta元素并设置base路径
+	-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<%
+		String basePath = request.getScheme() + "://";
+		basePath += request.getServerName() + ":" + request.getServerPort();
+		basePath += request.getContextPath() + "/";
+
+		String session_unitid = "";
+		String session_unitcode = "";
+		String session_unitname = "";
+		String session_userid = "";
+		String session_usercode = "";
+		String session_username = "";
+
+/*
+		java.util.Enumeration<String> e = request.getSession().getAttributeNames();
+		while (e.hasMoreElements())
+		{
+			String key = e.nextElement();
+			Object value = request.getSession().getAttribute(key);
+			System.out.println("key=" + key + ", value=" + value.toString());
+		}
+*/
+
+		Object value = request.getSession().getAttribute("M8_COMPANYID");
+		if (value != null)
+		{
+			session_unitid = value.toString();
+		}
+		value = request.getSession().getAttribute("M8_COMPANYCODE");
+		if (value != null)
+		{
+			session_unitcode = value.toString();
+		}
+		value = request.getSession().getAttribute("M8_COMPANYNAME");
+		if (value != null)
+		{
+			session_unitname = value.toString();
+		}
+
+		value = request.getSession().getAttribute("M8_USERID");
+		if (value != null)
+		{
+			session_userid = value.toString();
+		}
+		value = request.getSession().getAttribute("M8_USERCODE");
+		if (value != null)
+		{
+			session_usercode = value.toString();
+		}
+		value = request.getSession().getAttribute("M8_USERNAME");
+		if (value != null)
+		{
+			session_username = value.toString();
+		}
+	%>
+	<base href="<%=basePath%>">

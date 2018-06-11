@@ -1,0 +1,10 @@
+<SQL>
+	SELECT tl.UQLEDGETYPEID AS id, 
+      	tl.VARLEDGETYPENAME AS text, 
+		tl.UQPARENTID AS parentid, 
+      	tl.INTISLASTLEVEL AS leaf 
+	FROM tgl_ledgetype tl 
+	WHERE tl.INTISLASTLEVEL = 1 
+	AND tl.INTSTATUS = 2 
+	ORDER BY tl.VARLEDGETYPENAME 
+</SQL>

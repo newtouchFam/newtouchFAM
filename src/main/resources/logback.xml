@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+	<contextName>newtouch-workflow</contextName>
+	<property name="logroot" value="logroot/newtouch-workflow" />
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<!-- 默认控制台输出, 避免使用System.out -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<Encoding>UTF-8</Encoding>
+		<!-- encoder 默认配置为PatternLayoutEncoder -->
+		<encoder>
+			<pattern>%contextName: %d{yyyy-MM-dd HH:mm:ss}: [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.newtouch.cloud.platform.interceptor.LoginCheckInterceptor" additivity="false" level="DEBUG">
+<!-- 		<appender-ref ref="STDOUT" /> -->
+	</logger>
+
+	<logger name="com.newtouch.workflow.app.common.WfBeanConfigFactory" additivity="false" level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+
+</configuration>

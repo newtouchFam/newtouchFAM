@@ -1,0 +1,6 @@
+<SQL>
+	select tc.CATEGORYCODE as column0,tc.CATEGORYNAME as column1 
+	     from tob_category tc 
+	 where tc.CATEGORYTYPE = '10000008' 
+	 ORDER BY (column0+0) asc
+</SQL>

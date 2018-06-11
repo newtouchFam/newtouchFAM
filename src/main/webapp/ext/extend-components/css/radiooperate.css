@@ -1,0 +1,21 @@
+.allow-float {
+	clear: none !important;
+}  /* 允许该元素浮动 */
+.stop-float {
+	clear: both !important;
+}  /* 阻止该元素浮动 */
+.sex-male {
+	float: left;
+}
+
+.sex-female {
+	float: left;
+	padding: 0 0 0 20px;
+}
+
+.age-field {
+	float: left;
+	padding: 0 0 0 58px; *
+	padding: 0 0 0 50px !important; *
+	padding: 0 0 0 50px;
+}

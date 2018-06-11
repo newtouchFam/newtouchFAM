@@ -1,0 +1,10 @@
+<SQL>
+	SELECT d.uqattrid       "id", 
+       d.vardescription "text", 
+       d.uqparentid     "parentid", 
+       d.Intislastlevel "leaf" 
+  FROM tsys_companybase d 
+ WHERE d.intdelete = 0 
+   AND d.uqparentid = d.uqattrid 
+   AND d.UQATTRID != '00000000-0000-0000-0000-000000000000'
+</SQL>

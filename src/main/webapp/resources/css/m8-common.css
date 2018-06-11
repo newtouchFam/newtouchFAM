@@ -1,0 +1,537 @@
+.x-item-disabled * 
+{
+	color:black !important;
+	cursor:default !important;
+}
+.x-item-disabled {
+	color:black !important;
+	cursor:default;
+	opacity:.99;
+}
+.x-item-readonly
+{
+	color:black!important;
+	cursor:default!important;
+	background:#f9fafb url(../images/xy-text-bg-dis.gif) repeat-x 0 0!important;/*#f9fafb;*/
+	opacity:.99;
+	-moz-opacity:.99;
+	filter:alpha(opacity=99);
+}
+.x-item-readonly-con
+{
+	color:black!important;
+	opacity:1!important;
+	-moz-opacity:1!important;
+	filter:alpha(opacity=99)!important;
+}
+.xy-showvouch
+{
+	background-image:url(../images/showvouch.gif)!important;
+}
+.xy-bg
+{
+	background:url(../images/bg.gif) repeat 0 0 !important;
+}
+
+.xy-cmp-bg
+{
+	background:url(../images/cmp-bg.gif) repeat 0 0!important;
+}
+.xy-accordian
+{
+	background-image:url(../images/accordian.gif)!important;
+}
+.xy-add
+{
+	background-image:url(../images/add.gif)!important;
+}
+.xy-none
+{
+	background-image:url(../images/none.gif)!important;
+}
+.xy-edit
+{
+	background-image:url(../images/edit.gif)!important;
+}
+.xy-edit-txt
+{
+	background-image:url(../images/edit-txt.gif)!important;
+}
+.xy-edit-n
+{
+	background-image:url(../images/edit-n.gif)!important;
+}
+.xy-edit-dt
+{
+	background-image:url(../images/edit-dt.gif)!important;
+}
+.xy-edit-x
+{
+	background-image:url(../images/edit-x.gif)!important;
+}
+.xy-delete1
+{
+	background-image:url(../images/delete1.gif)!important;
+}
+.xy-delete
+{
+	background-image:url(../images/delete.gif)!important;
+}
+.xy-copy
+{
+	background-image:url(../images/copy.gif)!important;
+}
+.xy-save
+{
+	background-image:url(../images/save.gif)!important;
+}
+.xy-refresh
+{
+	background-image:url(../images/refresh.gif)!important;
+}
+.xy-enable
+{
+	background-image:url(../images/enable.png)!important;
+}
+.xy-disable
+{
+	background-image:url(../images/disable.gif)!important;
+}
+.xy-toolbar_refresh
+{
+	background-image:url(../images/toolbar_refresh.gif)!important;
+}
+.xy-print
+{
+	background-image:url(../images/print.gif)!important;
+}
+.xy-print_preview
+{
+	background-image:url(../images/print_preview.gif)!important;
+}
+.xy-new_window
+{
+	background-image:url(../images/new_window.gif)!important;
+}
+.xy-check
+{
+	background-image:url(../images/check.gif)!important;
+}
+.xy-check-cr
+{
+	background-image:url(../images/check-cr.gif)!important;
+}
+.xy-verify
+{
+	background-image:url(../images/verify.gif)!important;
+}
+.xy-view-select
+{
+	background-image:url(../images/view-select.gif)!important;
+}
+.xy-views
+{
+	background-image:url(../images/views.gif)!important;
+}
+.xy-browser
+{
+	background-image:url(../images/browser.gif)!important;
+}
+.xy-import
+{
+	background-image:url(../images/import.gif)!important;
+}
+.xy-export
+{
+	background-image:url(../images/export.gif)!important;
+}
+.xy-cross
+{
+	background-image:url(../images/cross.gif)!important;
+}
+.xy-clear
+{
+	background-image:url(../images/clear.gif)!important;
+}
+.xy-filter
+{
+	background-image:url(../images/filter.gif)!important;
+}
+.xy-find
+{
+	background-image:url(../images/find.gif)!important;
+}
+.xy-open
+{
+	background-image:url(../images/open.gif)!important;
+}
+.xy-post
+{
+	background-image:url(../images/post.gif)!important;
+}
+.xy-back
+{
+	background-image:url(../images/back.gif)!important;
+}
+.xy-sum
+{
+	background-image:url(../images/sum.gif)!important;
+}
+.xy-arrow-up
+{
+	background-image:url(../images/arrow-up.gif)!important;
+}
+.xy-arrow-down
+{
+	background-image:url(../images/arrow-down.gif)!important;
+}
+.xy-query
+{
+	background-image:url(../images/query.gif)!important;
+}
+.xy-bank_outgoing
+{
+	background-image:url(../images/bank_outgoing.gif)!important;
+}
+.xy-payment_outgoing
+{
+	background-image:url(../images/payment_outgoing.gif)!important;
+}
+.xy-account-cancel
+{
+	background-image:url(../images/account-cancel.gif)!important;
+}
+.xy-act-post
+{
+	background-image:url(../images/act-post.gif)!important;
+}
+.xy-stop
+{
+	background-image:url(../images/stop.gif)!important;
+}
+.xy-calc
+{
+	background-image:url(../images/calc.gif)!important;
+}
+.xy-associate
+{
+	background-image:url(../images/associate.gif)!important;
+}
+.xy-grid
+{
+	background-image:url(../images/grid.gif)!important;
+}
+.xy-columns
+{
+	background-image:url(../images/columns.gif)!important;
+}
+.xy-article
+{
+	background-image:url(../images/article.gif)!important;
+}
+.xy-attach
+{
+	background-image:url(../images/attach.gif) !important;
+}
+.xy-post
+{
+	background-image:url(../images/post.gif) !important;
+}
+.xy-opions
+{
+	background-image:url(../images/opions.gif)!important;
+}
+.xy-properties
+{
+	background-image:url(../images/properties.gif)!important;
+}
+.xy-properties-x
+{
+	background-image:url(../images/properties-x.gif)!important;
+}
+.xy-folder-open
+{
+	background-image:url(../images/folder-open.gif)!important;
+}
+.xy-folder
+{
+	background-image:url(../images/folder.gif)!important;
+}
+.xy-forum
+{
+	background-image:url(../images/forum.gif)!important;
+}
+.xy-comment
+{
+	background-image:url(../images/comment.gif)!important;
+}
+.xy-album
+{
+	background-image:url(../images/album.gif)!important;
+}
+.xy-page-next
+{
+	background-image:url(../images/page-next.gif)!important;
+}
+.xy-page-prev
+{
+	background-image:url(../images/page-prev.gif)!important;
+}
+.xy-page-first
+{
+	background-image:url(../images/page-first.gif)!important;
+}
+.xy-page-last
+{
+	background-image:url(../images/page-last.gif)!important;
+}
+.xy-page-next-disabled
+{
+	background-image:url(../images/page-next-disabled.gif)!important;
+}
+.xy-page-prev-disabled
+{
+	background-image:url(../images/page-prev-disabled.gif)!important;
+}
+.xy-page-first-disabled
+{
+	background-image:url(../images/page-first-disabled.gif)!important;
+}
+.xy-page-last-disabled
+{
+	background-image:url(../images/page-last-disabled.gif)!important;
+}
+.xy-calendar
+{
+	background-image:url(../images/calendar.gif)!important;
+}
+.xy-collapse
+{
+	background-image:url(../images/collapse.gif)!important;
+}
+.xy-expand
+{
+	background-image:url(../images/expand.gif)!important;
+}
+.xy-ns-collapse
+{
+	background-image:url(../images/ns-collapse.gif)!important;
+}
+.xy-ns-expand
+{
+	background-image:url(../images/ns-expand.gif)!important;
+}
+.xy-connect
+{
+	background-image:url(../images/connect.gif)!important;
+}
+.xy-close
+{
+	background-image:url(../images/close.gif)!important;
+}
+.xy-details
+{
+	background-image:url(../images/details.gif)!important;
+}
+.xy-leaf
+{
+	background-image:url(../images/leaf.gif)!important;
+}
+.xy-gears
+{
+	background-image:url(../images/gears.gif)!important;
+}
+.xy-list-items
+{
+	background-image:url(../images/list-items.gif)!important;
+}
+.xy-dirty
+{
+	background-image:url(../images/dirty.gif)!important;
+}
+.xy-lock
+{
+	background-image:url(../images/lock.gif)!important;
+}
+.xy-unlock
+{
+	background-image:url(../images/unlock.gif)!important;
+}
+.xy-arrow-forward
+{
+	background-image:url(../images/arrow-forward.gif)!important;
+}
+.xy-arrow-back
+{
+	background-image:url(../images/arrow-back.gif)!important;
+}
+.xy-arrow-backspace
+{
+	background-image:url(../images/arrow-backspace.gif)!important;
+}
+.xy-reminder
+{
+	background-image:url(../images/reminder.gif)!important;
+}
+.xy-ok
+{
+	background-image:url(../images/ok.gif)!important;
+}
+.xy-cancl
+{
+	background-image:url(../images/cancl.gif)!important;
+}
+.xy-upbloc
+{
+	background-image:url(../images/up2.gif)!important;
+}
+.xy-up
+{
+	background-image:url(../images/up2.gif)!important;
+}
+.xy-down
+{
+	background-image:url(../images/down2.gif)!important;
+}
+.xy-left
+{
+	background-image:url(../images/left2.gif)!important;
+}
+.xy-right
+{
+	background-image:url(../images/right2.gif)!important;
+}
+.xy-class
+{
+	background-image:url(../images/class.gif)!important;
+}
+.xy-config
+{
+	background-image:url(../images/config.gif)!important;
+}
+.xy-event
+{
+	background-image:url(../images/event.gif)!important;
+}
+.xy-example
+{
+	background-image:url(../images/example.gif)!important;
+}
+.xy-fav
+{
+	background-image:url(../images/fav.gif)!important;
+}
+.xy-template
+{
+	background-image:url(../images/template.gif)!important;
+}
+.xy-icon-delete-task
+{
+	background-image:url(../images/icon-delete-task.gif)!important;
+}
+.xy-member
+{
+	background-image:url(../images/member.gif)!important;
+}
+.xy-method
+{
+	background-image:url(../images/method.gif)!important;
+}
+.xy-plugin
+{
+	background-image:url(../images/print.gif)!important;
+}
+.xy-user
+{
+	background-image:url(../images/user.gif)!important;
+}
+.xy-header
+{
+	background-image:url(../images/header.gif)!important;
+}
+.xy-select
+{
+	background-image:url(../images/select.gif)!important;
+}
+.xy-clearselected
+{
+	background-image:url(../images/clearselected.gif)!important;
+}
+
+.xy-allselect
+{
+    background-image:url(../images/allselect.gif)!important;
+}
+
+.xy-allunselect
+{
+    background-image:url(../images/allunselect.gif)!important;
+}
+
+.xy-drop-yes
+{
+	background-image:url(../images/drop-yes.gif)!important;
+}
+
+.xy-pdf
+{
+	background-image:url(../images/pdf.png)!important;
+}
+.xy-excel
+{
+	background-image:url(../images/excel.png)!important;
+}
+
+
+/**/
+.xy-tree-root
+{
+	background-image:url(../images/folder.gif);
+}
+
+.rss
+{
+	background-image:url(../images/rss.gif)!important;
+}
+.xy-show-complete
+{
+    background-image:url(../images/icon-show-complete.gif)!important;
+}
+.xy-instancy_flag
+{
+    background-image:url(../images/flag_red.png)!important;
+}
+.xy-star_wj
+{
+    background-image:url(../images/star_wj.png)!important;
+}
+body
+{
+	font-size:12px
+}
+
+.x-grid-back-edit 
+{   
+    background: #DFE8F6;   
+}
+
+.x-grid-record-preachive table
+{   
+    color: #1F8661;   
+}
+
+.x-grid3-summary-row{border-left:1px solid #fff;border-right:1px solid #fff;color:#333;background:#D0D0D0 url(../images/xy-grid3-hrow.gif) repeat-x scroll 0 bottom;cursor:default;zoom:1;padding:1px 0 0 0;}
+.x-grid3-summary-row .x-grid3-cell-inner{font-weight:bold;padding-bottom:4px;padding:0!important;height:100%;}
+.x-grid3-cell-first .x-grid3-cell-inner{padding-left:16px;}
+.x-grid-hide-summary .x-grid3-summary-row{display:none;}
+.x-grid3-summary-msg{padding:4px 16px;font: normal normal}
+
+
+/* [REQUIRED] (by Ext.ux.grid.GridSummary plugin) */
+.x-grid3-gridsummary-row-inner{overflow:hidden;width:100%;}/* IE6 requires width:100% for hori. scroll to work */
+.x-grid3-gridsummary-row-offset{width:10000px;}
+.x-grid-hide-gridsummary .x-grid3-gridsummary-row-inner{display:none;}
+
+.x-grid-record-instancy {
+	background-color: #BDE5EA;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-config lazy-init=true log=true>
+	<entitys>
+		<!-- 实体表设置 -->
+		<entity name="main" desc="报账单主实体" table="tssc_smcsfm_main" class="com.newtouch.smcs.form.entity.MainEntity">
+			<columns>
+				<column type="key">id</column>
+			</columns>
+		</entity>
+		<entity name="cost" desc="成本费用报账单扩展主实体" table="tssc_smcsfm_cost" class="com.newtouch.smcs.form.entity.CostEntity">
+			<columns>
+				<column type="key">id</column>
+				<column type="parentkey">mainid</column>
+				<column type="seq">seq</column>
+				<column type="status">status</column>
+			</columns>
+		</entity>
+		<entity name="cost_info" desc="成本费用报账单业务明细子实体" table="tssc_smcsfm_cost_info" class="com.newtouch.smcs.form.entity.CostInfoEntity">
+			<columns>
+				<column type="key">id</column>
+				<column type="parentkey">mainid</column>
+				<column type="seq">seq</column>
+				<column type="status">status</column>
+			</columns>
+		</entity>
+	</entitys>
+	<busidocs>
+		<!-- 业务单据设置 -->
+		<busidoc name="cost" desc="成本费用报账单" formtype="BT0101" busiclass="BC0101">
+			<entity type="main" name="main" />
+			<entity type="detail" name="cost" />
+			<entity type="detail" name="cost_info" />
+		</busidoc>
+	</busidocs>
+</wf-config>

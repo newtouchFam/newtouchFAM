@@ -1,0 +1,274 @@
+﻿@charset "utf-8";
+/*******向导工具条*******/
+.xy-wizard-toolbar{
+	border-color: #CCC !important;
+    border-style:solid;
+    border-width:0 0 0 0;
+    display: block;
+	padding:0px;
+    background-color:#ffffff;
+    /*width:100%;
+    position:relative;*/
+	margin-bottom: 5px;
+    zoom:1;
+}
+.xy-wizard-toolbar-left{
+	font-size:15px;
+    line-height:1px;
+	width:15px!important;
+	height:63px;
+	background:url(../images/wizard-bg-left.gif) no-repeat 0 0;
+}
+.xy-wizard-toolbar-right{
+	font-size:10px;
+    line-height:1px;
+	width:15px!important;
+	table-layout:fixed;
+	height:63px;
+	background:url(../images/wizard-bg-right.gif) no-repeat 0 0;
+}
+.xy-wizard-toolbar-warp{
+	background:#ffffff url(../images/wizard-bg-center.gif) repeat-x top left;
+}
+.xy-wizard-tabsep {
+	background: transparent url(../images/wizard-bg-separator.gif) no-repeat 0 0px;
+	font-size: 10px;
+	height: 63px;
+	width: 30px !important;
+	/*table-layout:fixed;*/
+	overflow: hidden;
+	cursor:default;
+	border:0;
+}
+.xy-wizard-tabsep .ytb-sep{
+	width:30px;
+	font-size: 40px;
+}
+/*
+.xy-wizard-tabsep .ytb-sep{
+	width: 10px !important;
+}
+*/
+/**********按钮**************/
+.xy-step-btn-wrap{
+    border-width: 0px;
+    /*display: block;*/
+    padding: 0px;
+}
+.xy-step-btn{
+	font:normal 11px "微软雅黑","宋体",tahoma, verdana, helvetica;
+	cursor:pointer;
+	white-space: nowrap;
+}
+.xy-step-btn button{
+    border:0 none;
+    background:transparent;
+    font:normal 22px "微软雅黑","宋体",tahoma,verdana,helvetica;
+	color:#333333;
+    padding-left:0px;
+    padding-right:0px;
+    cursor:pointer;
+    margin:0;
+    overflow:visible;
+    width:auto;
+    -moz-outline:0 none;
+    outline:0 none;
+}
+.xy-step-btn button small{
+	font-size:11px !important;
+}
+.xy-step-btn-tabindex{
+	cursor:pointer;
+	position:relative;
+	float:left;
+	width:36px !important;
+	color:gray;
+	text-align: center;
+	padding:1px;
+	padding-top:0;
+	font: bold 36px Verdana, Arial, Helvetica, sans-serif;
+}
+
+* html .ext-ie .xy-step-btn button {
+    width:1px;
+}
+* html .ext-ie .xy-step-btn-center {
+    width:100%;
+    /*width:125px!important;*/
+}
+.ext-gecko .xy-step-btn button {
+    padding-left:0;
+    padding-right:0;
+}
+.ext-ie .xy-step-btn button {
+    padding-top:2px;
+}
+
+.xy-step-btn-left, .xy-step-btn-right{
+	font-size:1px;
+    line-height:1px;
+	width:3px;
+}
+.xy-step-btn-left i, .xy-step-btn-right i{
+	display:block;
+    width:3px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.xy-step-btn-center{
+	vertical-align: middle;
+	text-align:left;
+	padding:0px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+.xy-step-btn-over .xy-step-btn-text{
+	color:#ff0000;
+}
+.xy-step-btn-act{
+	background:transparent url(../images/xy-step-btn-center-act.gif) repeat-x 0 0px;
+	height:63px;
+}
+.xy-sep-right-act{
+	background:transparent url(../images/xy-step-btn-right-act.gif) no-repeat 0 0px!important;
+}
+.xy-sep-left-act{
+	background:transparent url(../images/xy-step-btn-left-act.gif) no-repeat right top!important;
+}
+.xy-step-first-sp-act{
+	background:url(../images/xy-step-btn-first-sp-act.gif) no-repeat 0 0!important;
+}
+.xy-step-end-sp-act{
+	background:url(../images/xy-step-btn-end-sp-act.gif) no-repeat 0 0!important;
+}
+
+.xy-sep-right-hide{
+	display:none;
+}
+
+.xy-step-btn-disabled,
+.xy-step-btn-disabled .xy-step-btn,
+.xy-step-btn-disabled  *{
+	color:gray !important;
+	cursor:default !important;
+}
+
+.xy-step-btn-disabled  .xy-step-btn-tabindex {
+	cursor:default !important;
+	opacity:.6;
+	-moz-opacity:.6;
+	filter: alpha(opacity=60);
+}
+
+/***********************************************************************************/
+.xy-step-btn-bottom-toolbar{
+	background: #ffffff!important;
+	border-color: #CCC !important;
+	border-style: solid !important;
+    border-width: 1px !important;
+    display: block;
+    padding: 1px;
+    position: relative;
+	margin-top: 2px;
+}
+
+.xy-step-bm-btn-left i, .xy-step-bm-btn-right i{
+	display:block;
+    width:3px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.xy-step-bm-btn-center{
+	background-color:#E0E0E0;
+	vertical-align: middle;
+	text-align:left;
+	padding:0 0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+.xy-step-bm-btn-infotext{
+	/*background-color:#FFE4C4;*/
+	padding:1px;
+	color:red;
+	/*border:1px solid #E9967A;*/
+}
+/***********************************/
+.x-grid3-header-offset{
+	width:auto;
+} 
+.xy-xywizardpanel-main{
+	background: transparent!important;
+	border-color: #CCC !important;
+	border-style: solid;
+    border-width: 0px !important;
+    display: block;
+    padding: 0px;
+	margin: 5px;
+}
+.xy-xywizardpanel-body{
+	background: transparent !important;
+	border-left: 1px solid #ccc !important;
+	border-right: 1px solid #ccc !important;
+	border-top: 0px;
+	border-bottom:0px;
+    padding: 5px!important;
+	margin: 0px;
+}
+
+.xy-viewport body{
+    border-width: 0px;
+    margin: 5px 5px 2px 5px;
+}
+.xy-viewport .x-border-layout-ct{
+	 background-color:#ffffff;
+}
+#wf_ssc_wizard_main .x-tab-panel-header{
+	display:none !important;
+}
+
+/*******按钮图标*******/
+.select-bustype{
+	background: url(../images/select-bustype.gif) no-repeat 0px 10px;
+}
+.select-baseinfo{
+	background: url(../images/select-baseinfo.gif) no-repeat 0px 10px;
+}
+.select-detail{
+	background: url(../images/select-detail.gif) no-repeat 0px 10px;
+}
+.select-payment{
+	background: url(../images/select-payment.gif) no-repeat 0px 10px;
+}
+.select-finsh{
+	background: url(../images/select-finsh.gif) no-repeat 0px 10px;
+}
+
+/******************/
+.xy-view-wrap {
+float:left;
+margin:4px 0px 4px 20px;
+padding:5px;
+width:auto;
+}
+.xy-view-text{
+white-space: nowrap;
+}
+.xy-view-over {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-color:#EFEFEF ;
+border:1px solid #DDDDDD;
+padding:4px;
+cursor:pointer;
+}
+.xy-view-selected {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background-color:#EFF5FB;
+border:1px solid #99BBE8;
+padding:4px;
+}

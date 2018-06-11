@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="综合费用查询" language="groovy" pageWidth="1200" pageHeight="595" orientation="Landscape" columnWidth="1160" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="96e72575-ba23-4c3b-98e0-07358594d4fb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="2"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="budgetyear" class="java.lang.String"/>
+	<parameter name="subdata" class="java.lang.Object"/>
+	<parameter name="subJasper" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="exvtreport_url" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="1100" height="30" uuid="7a9ac1ce-c489-4daf-b16e-6ab0bfcc93c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="黑体" size="20" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1010" y="30" width="90" height="20" uuid="dab775e0-f21b-4809-bc61-679a0a7ac357"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="920" y="30" width="90" height="20" uuid="eec37d10-a680-48b0-9e81-e6da9a7d69d4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[金额单位：]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="0" y="30" width="150" height="20" uuid="f626726e-4b12-4fad-a30d-4ff6a97a3993"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["预算年份：" + $P{budgetyear}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy-MM-dd hh:mm:ss">
+				<reportElement x="220" y="30" width="180" height="20" uuid="004f6be9-8ffe-45da-9bab-ca95808060a1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="30" width="70" height="20" uuid="40f3d764-a5bf-4d4b-810b-38f45b27cc1a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="宋体" size="12" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[统计时间：]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<subreport isUsingCache="false">
+				<reportElement x="0" y="0" width="1100" height="24" isRemoveLineWhenBlank="true" uuid="d8069b3d-7df0-4e14-9ca8-dd44141804da"/>
+				<subreportParameter name="exvtreport_url">
+					<subreportParameterExpression><![CDATA[$P{exvtreport_url}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="budgetyear">
+					<subreportParameterExpression><![CDATA[$P{budgetyear}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRMapCollectionDataSource($P{subdata})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subJasper}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,107 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!-- 动态多数据源切换配置 -->
+
+	<!-- 使用proxool管理数据库连接池 -->
+	<!-- 动态切换连接池 -->
+
+	<!-- 管理数据库 -->
+	<bean id="wfs004" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs004" />
+	</bean>
+
+	<!-- 公司数据库 -->
+	<bean id="manage" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.manage" />
+	</bean>
+	<bean id="sharedatabase" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.sharedatabase" />
+	</bean>
+	<bean id="wfs001" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs001" />
+	</bean>
+	<bean id="wfs002" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs002" />
+	</bean>
+	<bean id="wfs003" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs003" />
+	</bean>
+	<bean id="wfs005" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs005" />
+	</bean>
+	<bean id="wfs006" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs006" />
+	</bean>
+	<bean id="wfs007" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs007" />
+	</bean>
+	<bean id="wfs008" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs008" />
+	</bean>
+	<bean id="wfs009" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs009" />
+	</bean>
+	<bean id="wfs010" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs010" />
+	</bean>
+	<bean id="wfs011" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs011" />
+	</bean>
+	<bean id="wfs012" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs012" />
+	</bean>
+	<bean id="wfs013" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfs013" />
+	</bean>
+	<bean id="wfsproj" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.logicalcobwebs.proxool.ProxoolDriver" />
+		<property name="url" value="proxool.wfsproj" />
+	</bean>
+
+	<!-- 动态数据源 -->
+	<bean id="dynamicDataSource" class="com.newtouch.cloud.common.datasouce.dynamic.DynamicDataSource">
+		<property name="targetDataSources">
+			<!-- 标识符类型 -->
+			<map key-type="java.lang.String">
+				<entry key="manage" value-ref="manage" />
+				<entry key="sharedatabase" value-ref="sharedatabase" />
+				<entry key="wfs001" value-ref="wfs001" />
+				<entry key="wfs002" value-ref="wfs002" />
+				<entry key="wfs003" value-ref="wfs003" />
+				<entry key="wfs004" value-ref="wfs004" />
+				<entry key="wfs005" value-ref="wfs005" />
+				<entry key="wfs006" value-ref="wfs006" />
+				<entry key="wfs007" value-ref="wfs007" />
+				<entry key="wfs008" value-ref="wfs008" />
+				<entry key="wfs009" value-ref="wfs009" />
+				<entry key="wfs010" value-ref="wfs010" />
+				<entry key="wfs011" value-ref="wfs011" />
+				<entry key="wfs012" value-ref="wfs012" />
+				<entry key="wfs013" value-ref="wfs013" />
+				<entry key="wfsproj" value-ref="wfsproj" />
+			</map>
+		</property>
+		<property name="defaultTargetDataSource" ref="wfs004" />
+	</bean>
+</beans>

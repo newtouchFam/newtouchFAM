@@ -1,0 +1,4 @@
+<SQL>
+select  tc.categorycode colmn0,tc.categoryname column1 from tob_category tc
+        where tc.CATEGORYTYPE = '10000011'
+</SQL>

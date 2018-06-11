@@ -1,0 +1,97 @@
+<PUBLIC:COMPONENT lightWeight=true>
+<PUBLIC:ATTACH EVENT="oncontentready" ONEVENT="load()" />
+<PUBLIC:ATTACH EVENT="onmouseout"  ONEVENT="mouseout()" />
+<PUBLIC:ATTACH EVENT="onmouseover"  ONEVENT="mousemove()" />
+<PUBLIC:ATTACH EVENT="onmousedown" ONEVENT="mousedown()" />
+<PUBLIC:ATTACH EVENT="onmouseup" ONEVENT="mouseup()" />
+<PUBLIC:PROPERTY NAME="direction" />
+
+<SCRIPT LANGUAGE="JScript">
+function load() 
+{ 
+	if (element.tagName == 'INPUT')
+	{ 
+		if ((element.type == 'text') || (element.type == 'password'))
+		{
+			style.border = "1px solid #7EADD9";
+			style.paddingBottom = "0";
+			style.paddingTop = "2px";
+			style.height = "18px";
+			style.lineHeight = "16px";
+			style.verticalAlign = "middle";
+			style.background = "#FFFFFF url(resources/images/text-bg.gif) repeat-x scroll 0 0";
+			style.padding = "1px 3px";
+		}
+		else
+		if (element.type == 'button')
+		{
+			style.height = "18px";
+			style.border = "1px solid #003C74";
+			style.paddingTop = "2px";
+			style.paddingRight = "2px";
+			style.paddingLeft = "2px";
+			style.fontSize = "12px";
+			style.background = "#FFFFFF url(resources/images/btn-bg.gif) repeat fixed 0 0";
+			style.cursor = "pointer"; 
+			style.color = "black"; 
+		}
+		/*
+		else
+		if (element.type == 'checkbox')
+		{
+			style.position = "absolute";
+			style.clip = "rect(5 20 20 5)";
+		}
+		*/
+	}
+}
+
+function setImage(sImg) 
+{ 
+
+}
+
+function mouseout() 
+{ 
+	/*setImage(aNormal[iDir]);*/ 
+	
+	try
+	{		
+		if (element.type == 'file')
+		{
+			return;
+		}
+		element.style.MozOpacity = 0.4;
+		element.filters.alpha.opacity = 40;
+	}
+	catch(e)
+	{
+	}
+}
+function mousemove() 
+{ 
+	/*setImage(aOver[iDir]); */
+	try
+	{
+		if (element.type == 'file')
+		{
+			return;
+		}
+		element.style.MozOpacity = 1;
+		element.filters.alpha.opacity = 100;
+	}
+	catch(e)
+	{
+	}
+}
+function mousedown() 
+{ 
+	/*setImage(aClick[iDir]); */
+}
+function mouseup() 
+{ 
+	/*setImage(aNormal[iDir]); */
+}
+
+</SCRIPT>
+</PUBLIC:COMPONENT>

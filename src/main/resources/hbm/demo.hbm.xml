@@ -1,0 +1,10 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.newtouch.test">
+	<class name="com.newtouch.test.entity.Test2Entity" table="test_2">
+		<id name="code" type="java.lang.String" column="code" />
+	</class>
+</hibernate-mapping>

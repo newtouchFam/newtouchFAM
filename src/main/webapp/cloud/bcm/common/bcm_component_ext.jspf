@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<script type="text/javascript" src="cloud/bcm/component/combobox/CaseComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/IndexComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/IndexTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/PeriodComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/RespnComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/RespnTypeComboBox.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/combobox/SimpleComboBox.js"></script>
+
+		<script type="text/javascript" src="cloud/bcm/component/dialog/IndexDialog.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/dialog/RespnDialog.js"></script>
+
+		<script type="text/javascript" src="cloud/bcm/component/field/IndexField.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/field/IndexTypeField.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/field/RespnField.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/field/RespnTypeField.js"></script>
+		<script type="text/javascript" src="cloud/bcm/component/field/SpecactField.js"></script>
+	

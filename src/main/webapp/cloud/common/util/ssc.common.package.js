@@ -1,0 +1,3 @@
+
+ssc = {};
+ssc.common = {};

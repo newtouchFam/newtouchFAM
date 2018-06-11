@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsrconfig>
+	<columns>
+		<column field="item1" type="fix" />
+		<column field="row1" type="fix" />
+		<column field="qm1" type="cal" formula="qm" mode="eq" />
+		<column field="nc1" type="cal" formula="nc" mode="eq" />
+		<column field="item2" type="fix" />
+		<column field="row2" type="fix" />
+		<column field="qm2" type="cal" formula="qm" mode="eq" />
+		<column field="nc2" type="cal" formula="nc" mode="eq" />
+	</columns>
+	<row>
+		<cell valuetype="string" value="    固定资产清理" />
+		<cell valuetype="integer" value="31" />
+		<cell mode="in" account="1606,190102" />
+		<cell mode="in" account="1606,190102" />
+
+		<cell valuetype="string" value="         非流动负债合计 " />
+		<cell valuetype="integer" value="87" />
+		<cell mode="in" account="25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802" />
+		<cell mode="in" account="25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    生产性生物资产" />
+		<cell valuetype="integer" value="32" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="            负债合计" />
+		<cell valuetype="integer" value="88" />
+		<cell mode="in" account="2001,2201,2202,2203,2211,-270201,2221,2231,2232,2241,2235,1135,24010101,24010201,24010301,24010401,24010501,24019901,25010101,25010201,25010301,-27020202,-27029902,27010101,27019901,25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802" />
+		<cell mode="in" account="2001,2201,2202,2203,2211,-270201,2221,2231,2232,2241,2235,1135,24010101,24010201,24010301,24010401,24010501,24019901,25010101,25010201,25010301,-27020202,-27029902,27010101,27019901,25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    油气资产" />
+		<cell valuetype="integer" value="33" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="所有者权益：" />
+		<cell valuetype="integer" value="89" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    无形资产" />
+		<cell valuetype="integer" value="34" />
+		<cell mode="in" account="1701,-1702,-1703" />
+		<cell mode="in" account="1701,-1702,-1703"/>
+
+		<cell valuetype="string" value="    实收资本（股本）" />
+		<cell valuetype="integer" value="90" />
+		<cell mode="eq" account="4001" />
+		<cell mode="eq" account="4001" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    开发支出" />
+		<cell valuetype="integer" value="35" />
+		<cell mode="eq" account="530102" />
+		<cell mode="eq" account="530102"/>
+
+		<cell valuetype="string" value="      国有资本" />
+		<cell valuetype="integer" value="91" />
+		<cell mode="in" account="400101,400102" />
+		<cell mode="in" account="400101,400102" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    商誉" />
+		<cell valuetype="integer" value="36" />
+		<cell mode="in" account="1711,-1712" />
+		<cell mode="in" account="1711,-1712" />
+
+		<cell valuetype="string" value="          其中：国有法人资本" />
+		<cell valuetype="integer" value="92" />
+		<cell mode="eq" account="400102" />
+		<cell mode="eq" account="400102" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    长期待摊费用" />
+		<cell valuetype="integer" value="37" />
+		<cell mode="eq" account="1801" />
+		<cell mode="eq" account="1801" />
+
+		<cell valuetype="string" value="      集体资本" />
+		<cell valuetype="integer" value="93" />
+		<cell mode="eq" account="400105" />
+		<cell mode="eq" account="400105" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    递延所得税资产" />
+		<cell valuetype="integer" value="38" />
+		<cell mode="eq" account="1811" />
+		<cell mode="eq" account="1811" />
+
+		<cell valuetype="string" value="      民营资本" />
+		<cell valuetype="integer" value="94" />
+		<cell mode="in" account="400104,400107" />
+		<cell mode="in" account="400104,400107" />
+	</row>
+	<row>
+		<cell valuetype="string" value="    其他非流动资产" />
+		<cell valuetype="integer" value="39" />
+		<cell mode="eq" account="1802" />
+		<cell mode="eq" account="1802" />
+
+		<cell valuetype="string" value="          其中：个人资本" />
+		<cell valuetype="integer" value="95" />
+		<cell mode="eq" account="400104" />
+		<cell mode="eq" account="400104" />
+	</row>
+	<row>
+		<cell valuetype="string" value="        其中：特准储备物资" />
+		<cell valuetype="integer" value="40" />
+		<cell mode="eq" account="1802" />
+		<cell mode="eq" account="1802" />
+
+		<cell valuetype="string" value="      外商资本" />
+		<cell valuetype="integer" value="96" />
+		<cell mode="eq" account="400103" />
+		<cell mode="eq" account="400103" />
+	</row>
+	<row>
+		<cell valuetype="string" value="非流动资产合计" />
+		<cell valuetype="integer" value="41" />
+		<cell mode="in" account="1503,-1504,-1304,153102,-1532,-12310105,12310205,12310305,-12310405,-12319005,1511,-1512,1521,-1607,-1608,1601,-1602,-1603,1606,190102,1701,-1702,-1703,530102,1711,-1712,1801,1811,1802,1604,-1609,1699,1605,-1610" />
+		<cell mode="in" account="1503,-1504,-1304,153102,-1532,-12310105,12310205,12310305,-12310405,-12319005,1511,-1512,1521,-1607,-1608,1601,-1602,-1603,1606,190102,1701,-1702,-1703,530102,1711,-1712,1801,1811,1802,1604,-1609,1699,1605,-1610" />
+
+		<cell valuetype="string" value="    实收资本（或股本）净额" />
+		<cell valuetype="integer" value="97" />
+		<cell mode="eq" account="4001" />
+		<cell mode="eq" account="4001" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="42" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    其他权益工具" />
+		<cell valuetype="integer" value="98" />
+		<cell mode="eq" account="4004" />
+		<cell mode="eq" account="4004" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="43" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="        其中：优先股" />
+		<cell valuetype="integer" value="99" />
+		<cell mode="eq" account="400401" />
+		<cell mode="eq" account="400401" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="44" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="              永续债" />
+		<cell valuetype="integer" value="100" />
+		<cell mode="eq" account="400402" />
+		<cell mode="eq" account="400402" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="45" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    资本公积" />
+		<cell valuetype="integer" value="101" />
+		<cell mode="in" account="4002,4003,-1541" />
+		<cell mode="in" account="4002,4003,-1541" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="46" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    专项储备" />
+		<cell valuetype="integer" value="102" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="47" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    其他综合收益" />
+		<cell valuetype="integer" value="103" />
+		<cell mode="eq" account="4006" />
+		<cell mode="eq" account="4006" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="48" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="        其中：外币报表折算差额" />
+		<cell valuetype="integer" value="104" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="49" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    盈余公积" />
+		<cell valuetype="integer" value="105" />
+		<cell mode="eq" account="4101" />
+		<cell mode="eq" account="4101" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="50" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="     其中：法定公积金" />
+		<cell valuetype="integer" value="106" />
+		<cell mode="eq" account="410101" />
+		<cell mode="eq" account="410101" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="51" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="           任意公积金" />
+		<cell valuetype="integer" value="107" />
+		<cell mode="eq" account="410102" />
+		<cell mode="eq" account="410102" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="52" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    未分配利润" />
+		<cell valuetype="integer" value="108" />
+		<cell mode="eq" account="4104,4103,-6901" />
+		<cell mode="eq" account="4104,4103,-6901" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="53" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    归属于母公司所有者权益合计" />
+		<cell valuetype="integer" value="109" />
+		<cell mode="eq" account="4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+		<cell mode="eq" account="4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="54" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="    少数股东权益" />
+		<cell valuetype="integer" value="110" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+	<row>
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="55" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="         所有者权益合计" />
+		<cell valuetype="integer" value="111" />
+		<cell mode="eq" account="4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+		<cell mode="eq" account="4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+	</row>
+	<row>
+		<cell valuetype="string" value="资产合计" />
+		<cell valuetype="integer" value="56" />
+		<cell mode="in" account="1001,1002,1012,1101,1121,-12310106,12310206,12310306,-12310406,-12319006,1122,1124,-12310101,12310201,12310301,-12310401,-12319001,1123,-12310103,12310203,12310303,-12310403,-12319003,1132,-12310104,12310204,12310304,-12310404,-12319004,1131,1221,-12310102,12310202,12310302,-12310402,-12319002,1412,1461,1409,1408,1406,1405,1404,1403,1402,1401,-1471,153101,1303,190101,1503,-1504,-1304,153102,-1532,-12310105,12310205,12310305,-12310405,-12319005,1511,-1512,1521,-1607,-1608,1601,1602,1603,1606,190102,1701,-1702,-1703,530102,1711,-1712,1801,1811,1802,1604,-1609,1699,1605,-1610" />
+		<cell mode="in" account="1001,1002,1012,1101,1121,-12310106,12310206,12310306,-12310406,-12319006,1122,1124,-12310101,12310201,12310301,-12310401,-12319001,1123,-12310103,12310203,12310303,-12310403,-12319003,1132,-12310104,12310204,12310304,-12310404,-12319004,1131,1221,-12310102,12310202,12310302,-12310402,-12319002,1412,1461,1409,1408,1406,1405,1404,1403,1402,1401,-1471,153101,1303,190101,1503,-1504,-1304,153102,-1532,-12310105,12310205,12310305,-12310405,-12319005,1511,-1512,1521,-1607,-1608,1601,1602,1603,1606,190102,1701,-1702,-1703,530102,1711,-1712,1801,1811,1802,1604,-1609,1699,1605,-1610" />
+
+
+		<cell valuetype="string" value="     负债和所有者权益总计" />
+		<cell valuetype="integer" value="112" />
+		<cell mode="eq" account="2001,2201,2202,2203,2211,-270201,2221,2231,2232,2241,2235,1135,24010101,24010201,24010301,24010401,24010501,24019901,25010101,25010201,25010301,-27020202,-27029902,27010101,27019901,25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802,4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+		<cell mode="eq" account="2001,2201,2202,2203,2211,-270201,2221,2231,2232,2241,2235,1135,24010101,24010201,24010301,24010401,24010501,24019901,25010101,25010201,25010301,-27020202,-27029902,27010101,27019901,25010102,25010202,25010302,27010102,27019902,-27020201,-27029901,2711,2801,24010202,24010302,24010402,24010502,24019902,2901,2802,4001,4004,4002,4003,-1541,4006,4101,4104,4103,-6901" />
+	</row>
+	<row>
+		<cell valuetype="string" value="补充资料:" />
+		<cell valuetype="integer" value="" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+
+		<cell valuetype="string" value="" />
+		<cell valuetype="integer" value="" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+	<row>
+		<cell valuetype="string" value="      预收账款-递延流量" />
+		<cell valuetype="integer" value="" />
+		<cell mode="eq" account="220317" />
+		<cell mode="eq" account="220317" />
+
+		<cell valuetype="string" value="       铁塔处置收益" />
+		<cell valuetype="integer" value="" />
+		<cell type="fix" valuetype="money" value="" />
+		<cell type="fix" valuetype="money" value="" />
+	</row>
+
+</nsrconfig>

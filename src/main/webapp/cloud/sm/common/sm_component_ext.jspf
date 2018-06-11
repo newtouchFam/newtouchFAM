@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- ssc-component-sm -->
+		<script type="text/javascript" src="cloud/sm/component/combobox/UnitComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/DeptComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/UserComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/RoleComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/PostComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/TeamComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/ModuleComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/MenuFrameSetComboBox.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/combobox/SimpleComboBox.js"></script>
+
+		<script type="text/javascript" src="cloud/sm/component/dialog/UnitDialog.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/dialog/DeptDialog.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/dialog/UserDialog.js"></script>
+
+		<script type="text/javascript" src="cloud/sm/component/field/UnitField.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/field/DeptField.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/field/UserField.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/field/RoleField.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/field/PostField.js"></script>
+		<script type="text/javascript" src="cloud/sm/component/field/TeamField.js"></script>

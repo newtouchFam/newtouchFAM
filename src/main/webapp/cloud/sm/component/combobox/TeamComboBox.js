@@ -1,0 +1,1 @@
+﻿Ext.namespace("sm.component");

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<TITLE>M8绠＄��涓�瀹跺钩���</TITLE>
+		<META content="Microsoft Visual Studio 7.0" name="GENERATOR">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+		<meta content="FrontPage.Editor.Document" name="ProgId">
+
+	<script language="javascript">
+	function GetRootName()
+	{
+		var pathName = window.location.pathname;
+
+		var tmpName = pathName.substring(1,pathName.length);
+
+		var p = tmpName.indexOf("/");
+		if (p >= 0)
+		{
+			return tmpName.substring(0,p);
+		}
+		else
+		{
+			return tmpName;
+		}
+	}
+	</script>
+
+	<script language="javascript" event="onload" for="window">
+	var strPort = window.location.port;	
+
+	if (strPort == "80")
+	{
+		strPort = "";
+	}
+	else if (strPort == "")
+	{	
+		strPort = "";
+	}	
+	else
+	{
+		strPort = ":" + strPort;
+	}
+	
+	var strLoginURL = "http://" + window.location.hostname + strPort + "/" + GetRootName() + "/";
+	var strDownloadURL = strLoginURL + "AutoUpdate/AutoUpdate.aspx";
+
+	try
+	{
+		if (M8Proxy.Init(strLoginURL, strDownloadURL, window, "M8106", 0, "") != 0)
+		{
+			alert("浠ｇ��缁�浠惰��琛����璇����");
+			window.opener = null;
+			window.close(self);
+		
+			return;
+		}
+	}
+	catch(ex)
+	{
+		alert("��ㄨ�����瀹�瑁�M8瀹㈡�风��杩�琛����澧�锛���瑰�荤‘瀹������ㄨ浆��板��瑁�椤甸�����")
+		
+		window.navigate("install/install.htm");
+		return;
+	}
+
+	try
+	{
+		M8Proxy.ShowProgress = 1;
+	}
+	catch(ex)
+	{
+		alert("M8浠ｇ��缁�浠惰�剧疆���璇����\r\n\r\n���璇�淇℃��锛�" + ex.message);
+		
+		window.opener = null;
+		window.close(self);
+		
+		return;
+	}
+
+	try
+	{
+		if (M8Proxy.Transfer() == 1)
+		{
+			window.navigate("install/install.htm");
+			return;
+		}
+	}
+	catch(ex)
+	{
+		alert("M8浠ｇ��缁�浠惰��琛����璇����\r\n\r\n���璇�淇℃��锛�" + ex.message);
+	}
+	
+	window.opener = null;
+	window.close(self);
+	</script>
+
+	</HEAD>
+	<body style="OVERFLOW: hidden" bottomMargin="0" leftMargin="0" topMargin="0" rightMargin="0">
+		<DIV align="center">
+			<TABLE id="Table1" height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0" align="center">
+				<TR>
+					<TD width="100%" height="100%">
+						<OBJECT id="M8Proxy" width="0%" height="0%" classid="clsid:9B157FFF-F83E-426A-B78C-BFCA7A31AFC0" VIEWASTEXT>
+						</OBJECT>
+					<TD></TD>
+				</TR>
+			</TABLE>
+		</DIV>
+	</body>
+</HTML>

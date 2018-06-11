@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<script type="text/javascript" src="wfs/gl/component/xyformat.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xymap.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xymoney.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xynumber.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/globalcomponent.js"></script>
+
+<!--
+ 		<script type="text/javascript" src="wfs/gl/component/centerwindowplugin.js"></script>
+ -->
+		<script type="text/javascript" src="wfs/gl/component/xydatefield.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/XyThreeTriggerField.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/XyTopComboBox.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/XyComboboxCom.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/XyComboBoxWithNoBra.js"></script>
+
+		<script type="text/javascript" src="wfs/gl/component/basegridselect.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/basetreegridselect.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/accountsel.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xycomboboxacext.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xycheckedtree.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xyaccountinput.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xychooseaccount.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xychooseaccountex.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xychooseaccountle.js"></script>
+		
+		<script type="text/javascript" src="wfs/gl/component/xyledgertree.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/xyledgertreeac.js"></script>
+		
+<!--
+ 		<script type="text/javascript" src="wfs/gl/component/PagingToolbarEx.js"></script>
+		<script type="text/javascript" src="wfs/gl/component/ReportFrame.js"></script>
+ -->
+		<script type="text/javascript" src="wfs/gl/common/scripts/treeClickExpand.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/common.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/CookieUtil.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/dateFieldIE8BugFix.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/Exception.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/exceptionutil.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/ext-patch-TextField.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/Global.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/PageTool.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/topDateFieldIE8BugFix.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/XyComboBoxAc.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/XyComboBoxAcExt.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/XyGlobal.js"></script>
+		<script type="text/javascript" src="wfs/gl/common/scripts/XyString.js"></script>
+
+		

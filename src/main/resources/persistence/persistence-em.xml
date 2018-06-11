@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+		http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+<!-- 本配置文件已作废，持久化实现配置已完全委托给spring -->
+	<persistence-unit name="newtouch">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="false" />
+			<property name="hibernate.jdbc.batch_size" value="50" />
+
+			<!-- 实体自动扫描 -->
+			<!--
+			<property name="hibernate.archive.autodetetion" value="class, hbm" />
+			-->
+
+			<!-- 实体配置 -->
+			<mapping resource="classpath:/hbm/security.hbm.xml" />
+			<mapping resource="classpath:/hbm/test.hbm.xml" />
+		</properties>
+	</persistence-unit>
+</persistence>
